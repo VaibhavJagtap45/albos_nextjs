@@ -1,0 +1,50 @@
+
+> albos-technologies@1.0.0 build
+> next build
+
+  ▲ Next.js 14.2.29
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/25) ...
+   Generating static pages (6/25) 
+   Generating static pages (12/25) 
+   Generating static pages (18/25) 
+ ✓ Generating static pages (25/25)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                         Size     First Load JS
+┌ ○ /                                               2.2 kB          163 kB
+├ ○ /_not-found                                     142 B          87.3 kB
+├ ○ /about                                          185 B           101 kB
+├ ○ /careers                                        142 B          87.3 kB
+├ ○ /contact                                        174 B           112 kB
+├ ○ /icon.png                                       0 B                0 B
+├ ○ /portfolio                                      497 B           136 kB
+├ ○ /robots.txt                                     0 B                0 B
+├ ○ /services                                       296 B          96.1 kB
+├ ○ /services/android-app-development-services      9.42 kB         102 kB
+├ ○ /services/api-development-services              12.2 kB         105 kB
+├ ○ /services/blockchain-development-company        5.25 kB         134 kB
+├ ○ /services/digital-marketing-seo                 14.5 kB         107 kB
+├ ○ /services/erp-crm                               5.78 kB         107 kB
+├ ○ /services/ios-app-development                   13.4 kB         106 kB
+├ ○ /services/iot-application-development-services  15.9 kB         108 kB
+├ ○ /services/mobile-game-development-company       4.49 kB         134 kB
+├ ○ /services/socialMedia-marketing                 12.1 kB         104 kB
+├ ○ /services/telecalling-support                   11.5 kB         104 kB
+├ ○ /services/uiux-design-company                   7.26 kB        99.6 kB
+├ ○ /services/web-hosting-services                  7.21 kB        99.6 kB
+├ ○ /services/website-development-services-company  8.47 kB         101 kB
+└ ○ /sitemap.xml                                    0 B                0 B
++ First Load JS shared by all                       87.2 kB
+  ├ chunks/117-4c3b2261e19c1917.js                  31.6 kB
+  ├ chunks/fd9d1056-6402681317ea8432.js             53.6 kB
+  └ other shared chunks (total)                     1.95 kB
+
+
+○  (Static)  prerendered as static content
+
