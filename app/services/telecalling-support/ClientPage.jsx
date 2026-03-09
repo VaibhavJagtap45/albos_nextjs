@@ -274,7 +274,7 @@ function HeroVisual() {
   }, []);
 
   return (
-    <div style={{ position: "relative", width: "100%", maxWidth: 500 }}>
+    <div style={{ position: "relative", width: "100%", maxWidth: 370 }}>
       {/* Main dashboard card */}
       <div
         style={{
@@ -346,7 +346,7 @@ function HeroVisual() {
               <div
                 style={{
                   fontSize: 17,
-                  fontWeight: 800,
+                  fontWeight: 600,
                   color: m.color,
                   fontFamily: " sans-serif",
                 }}
@@ -531,6 +531,7 @@ function HeroVisual() {
             gap: 8,
             fontSize: 14.5,
             fontWeight: 600,
+
             color: "#0f172a",
             boxShadow: "0 6px 20px rgba(0,0,0,0.08)",
             animation: `tcFloat ${3 + i * 0.8}s ease-in-out ${b.delay}s infinite alternate`,
@@ -688,8 +689,8 @@ export default function TelecallingAndSupportServices() {
               <h1
                 style={{
                   // fontSize:"clamp(2rem,3.8vw,3.1rem)",
-                  fontSize: "48px",
-                  fontWeight: 800,
+                  fontSize: "56px",
+                  fontWeight: 600,
                   fontFamily: "sans-serif",
                   lineHeight: 1.1,
                   // letterSpacing:"-0.02em",

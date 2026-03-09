@@ -217,7 +217,7 @@ const Hero = () => (
         {/* text side */}
         <div style={{ flex: "1 1 420px", minWidth: 0 }}>
           <div
-            className="sec-label"
+            className="sec-label "
             style={{ opacity: 0, animation: "fadeIn .5s .1s forwards" }}
           >
             UI/UX Design Services
@@ -234,12 +234,14 @@ background-clip:text;
 animation: pan-grad 5s ease infinite;
 `}</style>
           <h1
-            className="serif text-5xl sm:text-6xl md:text-[3.8rem] lg:text-[4.4rem] font-normal leading-[1.06] mb-7 hero-enter"
+            className="serif text-5xl sm:text-6xl md:text-[3.8rem] lg:text-[4.4rem] font-bold leading-[1.06] mb-7 hero-enter"
             style={{ animationDelay: "120ms" }}
           >
             Professional UI/UX Design
             <br />
-            <em className="grad-text not-italic ">& Web/App Services</em>
+            <em className="grad-text not-italic font-bold">
+              & Web/App Services
+            </em>
           </h1>
           <p
             style={{
@@ -313,7 +315,7 @@ animation: pan-grad 5s ease infinite;
         {/* illustration */}
         <div
           style={{
-            flex: "1 1 320px",
+            flex: "1 1 700px",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -333,14 +335,15 @@ animation: pan-grad 5s ease infinite;
             />
             <Image
               src="https://cdni.iconscout.com/illustration/premium/thumb/ui-ux-designers-team-working-together-illustration-svg-download-png-6207662.png"
-              width={800}
-              height={600}
+              width={1000}
+              height={800}
               alt="UI UX Design"
               className="float-img"
               style={{
                 width: "100%",
-                maxWidth: 480,
-                filter: "drop-shadow(0 24px 48px rgba(37,99,235,.13))",
+                maxWidth: 850, // increased from 480
+                transform: "scale(1.1)", // slightly larger visual size
+                filter: "drop-shadow(0 30px 60px rgba(37,99,235,.18))",
               }}
             />
           </div>

@@ -37,7 +37,7 @@ const MAIN_SERVICES = [
     title: "API & Integrations",
     desc: "Custom REST & GraphQL APIs, microservices, and backend automation pipelines.",
     tags: ["REST APIs", "GraphQL", "Microservices"],
-    path: "/services/api-integrations",
+    path: "/services/api-development-services",
   },
   {
     n: "05 / SERVICE",
@@ -45,7 +45,7 @@ const MAIN_SERVICES = [
     title: "IoT & Embedded",
     desc: "Firmware, sensors, wireless protocols, edge computing, and cloud-device pipelines.",
     tags: ["IoT", "Embedded", "Edge Computing"],
-    path: "/services/iot-embedded-development",
+    path: "/services/iot-application-development-services",
   },
   {
     n: "06 / SERVICE",
@@ -53,7 +53,7 @@ const MAIN_SERVICES = [
     title: "Game Development",
     desc: "2D/3D, AR/VR, multiplayer games — Unity and Unreal Engine across all platforms.",
     tags: ["Unity", "Unreal", "AR/VR"],
-    path: "/services/game-development",
+    path: "/services/mobile-game-development-company",
   },
   {
     n: "07 / SERVICE",

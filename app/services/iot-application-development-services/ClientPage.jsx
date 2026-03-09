@@ -323,7 +323,7 @@ const IoTDevelopmentPage = () => {
                 justifyContent: "center",
               }}
             >
-              <div className="float-img" style={{ position: "relative" }}>
+              {/* <div className="float-img" style={{ position: "relative" }}>
                 <div
                   style={{
                     position: "absolute",
@@ -335,6 +335,30 @@ const IoTDevelopmentPage = () => {
                 />
                 <Image
                   src="/iot-application-development-services-services.svg"
+                  width={800}
+                  height={600}
+                  alt="IoT Illustration"
+                  style={{
+                    width: "min(420px,90vw)",
+                    position: "relative",
+                    zIndex: 1,
+                    filter: "drop-shadow(0 24px 48px rgba(37,99,235,0.2))",
+                  }}
+                />
+              </div> */}
+              <div className="float-img" style={{ position: "relative" }}>
+                <div
+                  style={{
+                    position: "absolute",
+                    inset: -20,
+                    background:
+                      "radial-gradient(circle,rgba(37,99,235,0.12) 0%,transparent 70%)",
+                    borderRadius: "50%",
+                  }}
+                />
+
+                <Image
+                  src="https://cdni.iconscout.com/illustration/premium/thumb/iot-application-development-illustration-download-in-svg-png-gif-file-formats--smart-home-internet-of-things-pack-network-technology-illustrations-4759503.png"
                   width={800}
                   height={600}
                   alt="IoT Illustration"

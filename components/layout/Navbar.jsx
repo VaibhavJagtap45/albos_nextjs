@@ -64,7 +64,7 @@ const SERVICES = [
     name: "Enterprise ERP / CRM LMS",
     icon: "🏢",
     desc: "Custom enterprise workflow solutions",
-    path: "/services/erp-crm",
+    path: "/services/erp-crm-development",
   },
   {
     name: "Blockchain Development",

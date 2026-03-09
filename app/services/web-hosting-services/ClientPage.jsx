@@ -641,7 +641,7 @@ const Hero = () => (
             style={{
               fontFamily: "'DM Serif Display',serif",
               fontSize: "clamp(2.6rem,5.5vw,4.4rem)",
-              fontWeight: 400,
+              fontWeight: 600,
               lineHeight: 1.07,
               letterSpacing: "-.025em",
               marginBottom: 24,
@@ -663,12 +663,13 @@ const Hero = () => (
                 animation: "fadeUp .7s cubic-bezier(.22,1,.36,1) .44s forwards",
               }}
             >
-              <span className="h-ul">Web Hosting</span>
+              <span className="h-ul font-bold">Web Hosting</span>
             </span>
             <span
               style={{
                 display: "block",
                 opacity: 0,
+                fontWeight: 600,
                 animation: "fadeUp .7s cubic-bezier(.22,1,.36,1) .58s forwards",
                 color: "var(--blue)",
               }}

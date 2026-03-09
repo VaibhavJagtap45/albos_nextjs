@@ -766,7 +766,7 @@ export default function DigitalMarketing() {
             display: "flex",
             flexWrap: "wrap",
             alignItems: "center",
-            gap: 52,
+            gap: 12,
             justifyContent: "space-between",
           }}
         >

@@ -1194,7 +1194,7 @@ export default function AppDevelopment() {
       </nav>
 
       {/* ─── HERO ─── */}
-      <header className="relative min-h-[92vh] flex items-center overflow-hidden bg-white dots-bg">
+      <header className="relative  flex items-center overflow-hidden bg-white dots-bg">
         {/* Blobs */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div
@@ -1226,11 +1226,11 @@ export default function AppDevelopment() {
           />
         </div>
 
-        <div className="relative z-10    mx-auto px-[5%] py-2 md:py-8 grid md:grid-cols-2 gap-16 items-center w-full">
+        <div className="relative z-10 mb-[65px] mx-auto px-[5%] py-2 md:py-2 grid md:grid-cols-2 gap-8 items-center w-full">
           {/* Left */}
           <div>
             <div
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold mb-8"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold mb-2"
               style={{
                 animation: "bounce-in .6s ease .2s both",
                 boxShadow: "0 0 0 0 rgba(16,185,129,.4)",
@@ -1253,7 +1253,7 @@ export default function AppDevelopment() {
             </h1>
 
             <p
-              className="text-lg text-slate-600 leading-relaxed max-w-xl mb-4"
+              className="text-lg text-slate-600 leading-relaxed max-w-xl mb-2"
               style={{ animation: "bounce-in .7s ease .25s both" }}
             >
               Native & cross-platform Android apps built with Kotlin, Jetpack
@@ -1262,12 +1262,12 @@ export default function AppDevelopment() {
             </p>
 
             <div
-              className="flex flex-wrap gap-4 mb-2"
+              className="flex flex-wrap gap-4 mb-6"
               style={{ animation: "bounce-in .7s ease .4s both" }}
             >
               <a
                 href="/contact"
-                className="hero-cta-btn inline-flex items-center gap-2 px-7 py-4 rounded-2xl text-white font-semibold text-base shadow-xl"
+                className="hero-cta-btn inline-flex items-center gap-2 px-4 py-2 rounded-2xl text-white font-semibold text-base shadow-xl"
               >
                 Get a Free Quote
                 <svg
@@ -1299,7 +1299,7 @@ export default function AppDevelopment() {
 
             {/* Stats */}
             <div
-              className="flex gap-10 pt-2 border-t border-slate-100"
+              className="flex gap-10 pt-6 border-t border-slate-100"
               style={{ animation: "bounce-in .7s ease .55s both" }}
             >
               {[
@@ -1322,9 +1322,9 @@ export default function AppDevelopment() {
           {/* Right – Phone Mockup */}
           <div className="flex justify-center items-center relative">
             <div className="phone-float relative">
-              <div className="relative w-[260px] mx-auto">
+              <div className="relative w-[260px] mt-5 mx-auto">
                 <div
-                  className="rounded-[2.5rem] border-[10px] border-slate-800 shadow-2xl overflow-hidden"
+                  className="rounded-[1.7rem] border-[5px] border-slate-800 shadow-2xl overflow-hidden"
                   style={{
                     boxShadow:
                       "0 40px 80px rgba(0,0,0,.2), 0 0 0 1px rgba(255,255,255,.1) inset",
@@ -1453,7 +1453,7 @@ export default function AppDevelopment() {
         </div>
 
         {/* Tech ticker */}
-        <div className="absolute bottom-0 left-0 right-0 border-t border-slate-100 bg-white/80 backdrop-blur-sm py-3">
+        <div className="absolute mt-8 bottom-0 left-0 right-0 border-t border-slate-100 bg-white/80 backdrop-blur-sm py-3">
           <div className="ticker-wrap">
             <div className="ticker-inner">
               {[...Array(2)]

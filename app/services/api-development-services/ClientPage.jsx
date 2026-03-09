@@ -553,8 +553,8 @@ export default function ApiDevelopment() {
         </div>
 
         <div className="relative z-10  px-[5%] py-24">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-16">
-            <div className="flex-1 max-w-2xl">
+          <div className="flex flex-col md:flex-row items-center  gap-66">
+            <div className="flex-1 mr-[50px]">
               <div className="hero-badge inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8 border border-blue-200 bg-blue-50 text-blue-700 text-sm font-medium">
                 <span className="glow-dot"></span>
                 Trusted by 200+ Businesses Worldwide
@@ -635,7 +635,7 @@ export default function ApiDevelopment() {
             </div>
 
             {/* Animated Code Visual */}
-            <div className="flex-1 flex justify-center items-center hidden md:flex">
+            <div className=" ml-[80px] flex-2 flex  hidden md:flex">
               <div className="relative w-96">
                 <div className="float-anim">
                   <div

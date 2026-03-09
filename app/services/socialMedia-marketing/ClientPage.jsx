@@ -715,8 +715,8 @@ export default function SocialMediaMarketing() {
             display: "flex",
             flexWrap: "wrap",
             alignItems: "center",
-            gap: 48,
-            justifyContent: "space-between",
+            gap: 128,
+            // justifyContent: "space-between",
           }}
         >
           <div style={{ flex: "1 1 420px", maxWidth: 580 }}>

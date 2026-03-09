@@ -397,11 +397,11 @@ animation:ripple 2s ease-out infinite;
           </svg>
         </div>
 
-        <div className="relative z-10   px-[5%]  py-12 grid md:grid-cols-2 gap-16 items-center w-full">
+        <div className="relative z-10 mt-10  px-[5%]  py-12 grid md:grid-cols-2 gap-16 items-center w-full">
           {/* Left */}
           <div>
             <div
-              className="hero-enter inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-200 bg-blue-50 text-blue-700 mb-8"
+              className="hero-enter inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-200 bg-blue-50 text-blue-700 mb-4"
               style={{
                 animationDelay: "0ms",
                 fontSize: "11px",
@@ -421,7 +421,7 @@ animation:ripple 2s ease-out infinite;
             </div>
 
             <h1
-              className="serif text-5xl sm:text-6xl md:text-[3.8rem] lg:text-[4.4rem] font-normal leading-[1.06] mb-7 hero-enter"
+              className="serif text-5xl sm:text-6xl md:text-[3.8rem] lg:text-[4.4rem] font-bold leading-[1.06] mb-7 hero-enter"
               style={{ animationDelay: "120ms" }}
             >
               Build Future-Ready

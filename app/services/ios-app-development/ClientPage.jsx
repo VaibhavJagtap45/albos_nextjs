@@ -642,11 +642,11 @@ export default function IosDevelopment() {
           </svg>
         </div>
 
-        <div className="relative z-10   mx-auto px-[5%] py-12 grid md:grid-cols-2 gap-16 lg:gap-20 items-center w-full">
+        <div className="relative z-10 mt-[50px] mx-auto px-[5%] py-12 grid md:grid-cols-2 gap-16 lg:gap-20 items-center w-full">
           {/* Left */}
           <div>
             <div
-              className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-blue-200 bg-blue-50 text-blue-700 mb-8"
+              className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-blue-200 bg-blue-50 text-blue-700 mb-4"
               style={{
                 animation: "pop-in .6s cubic-bezier(.34,1.56,.64,1) .1s both",
                 fontSize: "11px",
@@ -676,7 +676,7 @@ export default function IosDevelopment() {
             </h1>
 
             <p
-              className="text-lg text-slate-600 leading-relaxed max-w-xl mb-10"
+              className="text-lg text-slate-600 leading-relaxed max-w-xl mb-5"
               style={{
                 animation: "hero-in .8s cubic-bezier(.22,1,.36,1) .3s both",
               }}
@@ -688,24 +688,26 @@ export default function IosDevelopment() {
             </p>
 
             <div
-              className="flex flex-wrap gap-4 mb-14"
+              className="flex flex-wrap gap-4 mb-6"
               style={{
                 animation: "hero-in .8s cubic-bezier(.22,1,.36,1) .45s both",
               }}
             >
               <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
-                Get a Free Quote
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M13 2a9 9 0 0 1 9 9" />
-                  <path d="M13 6a5 5 0 0 1 5 5" />
-                  <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
-                </svg>
+                <span>Get a Free Quote </span>
+                <span>
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M13 2a9 9 0 0 1 9 9" />{" "}
+                    <path d="M13 6a5 5 0 0 1 5 5" />{" "}
+                    <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                  </svg>
+                </span>
               </button>
               <button className="outline-btn inline-flex items-center gap-2 px-8 py-4 rounded-2xl font-semibold text-slate-700 text-base">
                 View Our Work
@@ -759,9 +761,9 @@ export default function IosDevelopment() {
               style={{ animation: "float-a 6s ease-in-out infinite" }}
             >
               {/* Phone */}
-              <div className="relative w-[260px] mx-auto">
+              <div className="relative w-[290px] mx-auto">
                 <div
-                  className="rounded-[2.8rem] border-[10px] border-slate-800 shadow-2xl overflow-hidden"
+                  className="rounded-[2.1rem] border-[4px] border-slate-800 shadow-2xl overflow-hidden"
                   style={{
                     boxShadow:
                       "0 50px 100px rgba(0,0,0,.25), 0 0 0 1px rgba(255,255,255,.08) inset",
