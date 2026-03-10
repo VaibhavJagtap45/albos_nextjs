@@ -644,7 +644,7 @@ export default function Hero() {
           </p>
 
           <h1
-            className="font-black leading-[0.99] mb-6
+            className="font-black leading-[1.07] mb-6
             text-[2.2rem]
             sm:text-[2.3rem]
             md:text-[2.4rem]

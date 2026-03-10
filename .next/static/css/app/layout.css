@@ -2536,6 +2536,9 @@ video {
 .leading-\[1\.06\] {
   line-height: 1.06;
 }
+.leading-\[1\.07\] {
+  line-height: 1.07;
+}
 .leading-\[1\.08\] {
   line-height: 1.08;
 }
@@ -2553,9 +2556,6 @@ video {
 }
 .leading-tight {
   line-height: 1.25;
-}
-.leading-\[0\.99\] {
-  line-height: 0.99;
 }
 .tracking-\[0\.14em\] {
   letter-spacing: 0.14em;
