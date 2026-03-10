@@ -151,11 +151,7 @@ ${formData.details || "N/A"}
                   info@albostechnologies.com
                 </a>,
               ],
-              [
-                "📍",
-                "Office",
-                "Office 78, 5th Floor, Kunal Plaza, Pune, Maharashtra 411019",
-              ],
+              ["📍", "Office", "Kunal Plaza, Pune MH 411019"],
               ["🕐", "Hours", "Mon – Sat, 10:00 AM – 7:00 PM IST"],
             ].map(([icon, lbl, val]) => (
               <div key={lbl} className="flex gap-4 items-start">

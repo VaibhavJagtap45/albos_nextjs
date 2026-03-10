@@ -2503,7 +2503,7 @@ const IoTDevelopmentPage = () => {
                 icon: <MapPin size={22} color="#2563eb" />,
                 title: "Office Location",
                 value:
-                  "Office 78, 5th floor, Kunal Plaza, Pune, Maharashtra 411019",
+                  "Kunal Plaza, Pune MH 411019",
               },
               {
                 icon: <Clock size={22} color="#2563eb" />,

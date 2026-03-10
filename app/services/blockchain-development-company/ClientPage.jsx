@@ -557,7 +557,7 @@ function StatsBar() {
   ];
   return (
     <section
-      className="bg-white"
+      className="bg-white mb-6"
       style={{
         borderTop: "1px solid #e2e8f0",
         borderBottom: "1px solid #e2e8f0",
@@ -738,7 +738,7 @@ function Testimonials() {
 
 /* ─────────────────── HERO (canvas replaces image) ─────────────────── */
 const Hero = () => (
-  <section className="relative w-full pt-20 pb-20 overflow-hidden bg-gradient-to-b from-slate-50 via-white to-white">
+  <section className="relative w-full mt-5 pt-20 pb-10 overflow-hidden bg-gradient-to-b from-slate-50 via-white to-white">
     <style>{`
       @keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
     `}</style>
@@ -1391,8 +1391,8 @@ export default function BlockchainAndWeb3() {
     <div className="antialiased text-slate-900 overflow-x-hidden">
       <main>
         <Hero />
-        <Ticker />
         <StatsBar />
+        <Ticker />
         <WhyChoose />
         <ProcessSection />
         <ServicesGrid />

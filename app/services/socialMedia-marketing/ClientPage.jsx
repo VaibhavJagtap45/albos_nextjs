@@ -797,7 +797,7 @@ animation: pan-grad 5s ease infinite;
                 }}
               >
                 <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
-                  Get a Free Quote <ArrowRight size={15} />
+                  Get a Free Quote
                 </button>
                 <button
                   style={{
@@ -2244,7 +2244,7 @@ animation: pan-grad 5s ease infinite;
                 }
                 onMouseLeave={(e) => (e.currentTarget.style.transform = "")}
               >
-                Get a Free Quote <ArrowRight size={15} />
+                Get a Free Quote
               </button>
               <a
                 href="tel:+919766650411"
