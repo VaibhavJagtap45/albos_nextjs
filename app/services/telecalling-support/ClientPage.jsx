@@ -739,7 +739,7 @@ export default function TelecallingAndSupportServices() {
                 }}
               >
                 <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
-                  Get a Free Quote <PhoneCall size={15} />
+                  Get a Free Quote
                 </button>
                 <button
                   style={{
@@ -864,8 +864,8 @@ export default function TelecallingAndSupportServices() {
       </section>
 
       {/* ══ WHAT WE DO ══ */}
-      <section style={{ padding: "96px 32px", background: "white" }}>
-        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
+      <section style={{ padding: "36px 32px", background: "white" }}>
+        <div style={{ maxWidth: 1380, margin: "0 auto" }}>
           <Reveal>
             <div
               style={{
@@ -1026,11 +1026,11 @@ export default function TelecallingAndSupportServices() {
       {/* ══ INBOUND / OUTBOUND ══ */}
       <section
         style={{
-          padding: "96px 32px",
+          padding: "36px 32px",
           background: "linear-gradient(180deg,#f8faff,white)",
         }}
       >
-        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
+        <div style={{ maxWidth: 1380, margin: "0 auto" }}>
           <Reveal>
             <div
               style={{
@@ -1429,8 +1429,8 @@ export default function TelecallingAndSupportServices() {
       </section>
 
       {/* ══ CALLING TECHNOLOGY ══ */}
-      <section style={{ padding: "96px 32px", background: "white" }}>
-        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
+      <section style={{ padding: "36px 32px", background: "white" }}>
+        <div style={{ maxWidth: 1380, margin: "0 auto" }}>
           <Reveal>
             <div
               style={{
@@ -1660,11 +1660,11 @@ export default function TelecallingAndSupportServices() {
       {/* ══ WHY CHOOSE US ══ */}
       <section
         style={{
-          padding: "96px 32px",
+          padding: "36px 32px",
           background: "linear-gradient(180deg,#f8faff,white)",
         }}
       >
-        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+        <div style={{ maxWidth: 1380, margin: "0 auto" }}>
           <Reveal>
             <div
               style={{
@@ -1802,7 +1802,7 @@ export default function TelecallingAndSupportServices() {
 
       {/* ══ CTA BANNER ══ */}
       <section style={{ padding: "0 32px 96px" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+        <div style={{ maxWidth: 1380, margin: "0 auto" }}>
           <Reveal>
             <div
               style={{

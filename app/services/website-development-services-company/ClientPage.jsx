@@ -25,7 +25,28 @@ const CHIPS = [
   { name: "Rust", logo: "https://cdn.simpleicons.org/rust" },
   { name: "Go", logo: "https://cdn.simpleicons.org/go" },
 ];
-
+const TECH_ICONS = {
+  React: "https://cdn.simpleicons.org/react",
+  "Next.js": "https://cdn.simpleicons.org/nextdotjs",
+  Vue: "https://cdn.simpleicons.org/vue.js",
+  TypeScript: "https://cdn.simpleicons.org/typescript",
+  "Tailwind CSS": "https://cdn.simpleicons.org/tailwindcss",
+  "Node.js": "https://cdn.simpleicons.org/nodedotjs",
+  NestJS: "https://cdn.simpleicons.org/nestjs",
+  Django: "https://cdn.simpleicons.org/django",
+  Laravel: "https://cdn.simpleicons.org/laravel",
+  FastAPI: "https://cdn.simpleicons.org/fastapi",
+  PostgreSQL: "https://cdn.simpleicons.org/postgresql",
+  MongoDB: "https://cdn.simpleicons.org/mongodb",
+  MySQL: "https://cdn.simpleicons.org/mysql",
+  Redis: "https://cdn.simpleicons.org/redis",
+  DynamoDB: "https://cdn.simpleicons.org/amazondynamodb",
+  AWS: "https://cdn.simpleicons.org/amazonaws",
+  Azure: "https://cdn.simpleicons.org/microsoftazure",
+  GCP: "https://cdn.simpleicons.org/googlecloud",
+  Docker: "https://cdn.simpleicons.org/docker",
+  Kubernetes: "https://cdn.simpleicons.org/kubernetes",
+};
 const doubled = [...CHIPS, ...CHIPS];
 
 /* ─── Scroll-reveal hook ─────────────────────────────────────────── */
@@ -240,7 +261,10 @@ export default function WebDevelopment() {
 @keyframes pan-grad { 0%,100%{background-position:0% 50%} 50%{background-position:100% 50%} }
 @keyframes shimmer { 0%{background-position:-200% 0} 100%{background-position:200% 0} }
 @keyframes ripple { 0%{transform:scale(.9);opacity:.7} 100%{transform:scale(1.8);opacity:0} }
-
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
 /* ── Buttons ── */
 .shimmer-btn {
 background: linear-gradient(90deg,#d97706,#f59e0b,#fbbf24,#f59e0b,#d97706);
@@ -699,35 +723,22 @@ animation:ripple 2s ease-out infinite;
 
         {/* Ticker */}
         <div className="absolute bottom-0 left-0 right-0 bg-white/80 backdrop-blur-sm border-t border-slate-100 py-3 overflow-hidden">
-          <div className="flex whitespace-nowrap animate-[scroll_25s_linear_infinite]">
-            {[...Array(2)]
-              .flatMap(() => [
-                "React",
-                "Next.js",
-                "Vue",
-                "TypeScript",
-                "Node.js",
-                "NestJS",
-                "Django",
-                "Laravel",
-                "FastAPI",
-                "PostgreSQL",
-                "MongoDB",
-                "AWS",
-                "Docker",
-                "Kubernetes",
-                "GraphQL",
-                "REST APIs",
-              ])
-              .map((t, i) => (
-                <div
-                  key={i}
-                  className="flex items-center gap-2 mx-4 px-3 py-1 rounded-full bg-white shadow-sm border border-slate-100 text-xs text-slate-600 font-medium"
-                >
-                  <span className="w-2 h-2 rounded-full bg-blue-500" />
-                  {t}
-                </div>
-              ))}
+          <div className="flex items-center gap-4 whitespace-nowrap animate-[scroll_28s_linear_infinite] w-max">
+            {doubled.map((chip, i) => (
+              <div
+                key={i}
+                className="flex items-center gap-2 mx-2 px-7 py-1.5 rounded-full bg-white border border-slate-200 shadow-sm text-xs font-medium text-slate-700"
+              >
+                <Image
+                  src={chip.logo}
+                  alt={chip.name}
+                  width={16}
+                  height={16}
+                  className="w-4 h-4"
+                />
+                {chip.name}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -1051,8 +1062,17 @@ animation:ripple 2s ease-out infinite;
                         key={j}
                         className="tech-item flex items-center gap-4 p-4 rounded-2xl border border-transparent cursor-default"
                       >
-                        <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-lg font-bold text-blue-700 shrink-0">
+                        {/* <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-lg font-bold text-blue-700 shrink-0">
                           {item[0]}
+                        </div> */}
+                        <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center shrink-0">
+                          <Image
+                            src={TECH_ICONS[item]}
+                            alt={item}
+                            width={20}
+                            height={20}
+                            className="w-5 h-5"
+                          />
                         </div>
                         <div className="flex-1">
                           <div className="font-semibold text-slate-900 text-sm">

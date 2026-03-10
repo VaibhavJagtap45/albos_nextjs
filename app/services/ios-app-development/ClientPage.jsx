@@ -70,6 +70,23 @@ function CountUp({ to, suffix = "" }) {
   );
 }
 
+const IOS_TECH_ICONS = {
+  Swift: "https://cdn.simpleicons.org/swift/F05138",
+  SwiftUI: "https://cdn.simpleicons.org/swift/F05138",
+  "Objective-C": "https://cdn.simpleicons.org/apple/000000",
+  Xcode: "https://cdn.simpleicons.org/xcode/147EFB",
+  "Core Data": "https://cdn.simpleicons.org/apple/000000",
+  ARKit: "https://cdn.simpleicons.org/apple/000000",
+  HealthKit: "https://cdn.simpleicons.org/apple/000000",
+  CloudKit: "https://cdn.simpleicons.org/appleicloud/3693F3",
+  TestFlight: "https://cdn.simpleicons.org/apple/000000",
+  "App Store Connect": "https://cdn.simpleicons.org/appstore/0D96F6",
+  UIKit: "https://cdn.simpleicons.org/apple/000000",
+  Combine: "https://cdn.simpleicons.org/apple/000000",
+  Metal: "https://cdn.simpleicons.org/apple/000000",
+  MapKit: "https://cdn.simpleicons.org/applemaps/007AFF",
+  StoreKit: "https://cdn.simpleicons.org/apple/000000",
+};
 /* ─── Data ────────────────────────────────────────────────── */
 const TRUST_CARDS = [
   {
@@ -569,7 +586,7 @@ export default function IosDevelopment() {
       `}</style>
 
       {/* ─── HERO ─── */}
-      <section className="relative min-h-screen flex items-center overflow-hidden dot-pattern bg-white">
+      <section className=" min-h-screen flex items-center overflow-hidden dot-pattern bg-white">
         {/* Ambient */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div
@@ -695,19 +712,7 @@ export default function IosDevelopment() {
             >
               <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
                 <span>Get a Free Quote </span>
-                <span>
-                  <svg
-                    className="w-4 h-4"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M13 2a9 9 0 0 1 9 9" />{" "}
-                    <path d="M13 6a5 5 0 0 1 5 5" />{" "}
-                    <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
-                  </svg>
-                </span>
+                <span></span>
               </button>
               <button className="outline-btn inline-flex items-center gap-2 px-8 py-4 rounded-2xl font-semibold text-slate-700 text-base">
                 View Our Work
@@ -1015,8 +1020,8 @@ export default function IosDevelopment() {
         </div>
 
         {/* Ticker */}
-        <div className="absolute bottom-0 left-0 right-0 bg-white/85 backdrop-blur-sm   py-3 ticker-wrap">
-          <div className="ticker-inner">
+        <div className="mt-8 absolute bottom-0 left-0 right-0 bg-white/85 backdrop-blur-sm py-3 overflow-hidden">
+          <div className="mt-8 flex items-center whitespace-nowrap animate-[ticker_28s_linear_infinite]">
             {[...Array(2)]
               .flatMap(() => [
                 "Swift",
@@ -1035,14 +1040,18 @@ export default function IosDevelopment() {
                 "MapKit",
                 "StoreKit",
               ])
-              .map((t, i) => (
-                <span
+              .map((tech, i) => (
+                <div
                   key={i}
-                  className="inline-flex items-center gap-2 mx-6 text-xs text-slate-500 font-medium"
+                  className="flex items-center gap-2 mx-4 px-7 py-1.5 rounded-full bg-white border border-slate-200 shadow-sm text-xs font-medium text-slate-700"
                 >
-                  <span className="w-1.5 h-1.5 rounded-full bg-blue-400 inline-block" />
-                  {t}
-                </span>
+                  <img
+                    src={IOS_TECH_ICONS[tech]}
+                    alt={tech}
+                    className="w-4 h-4"
+                  />
+                  {tech}
+                </div>
               ))}
           </div>
         </div>
@@ -1059,8 +1068,42 @@ export default function IosDevelopment() {
             filter: "blur(60px)",
           }}
         />
-
-        <div className=" mx-auto px-[5%]">
+        <div className=" absolute top-0 left-0 right-0 bg-white/85 backdrop-blur-sm py-3 overflow-hidden">
+          <div className="mt-8 flex items-center whitespace-nowrap animate-[ticker_28s_linear_infinite]">
+            {[...Array(2)]
+              .flatMap(() => [
+                "Swift",
+                "SwiftUI",
+                "Objective-C",
+                "Xcode",
+                "Core Data",
+                "ARKit",
+                "HealthKit",
+                "CloudKit",
+                "TestFlight",
+                "App Store Connect",
+                "UIKit",
+                "Combine",
+                "Metal",
+                "MapKit",
+                "StoreKit",
+              ])
+              .map((tech, i) => (
+                <div
+                  key={i}
+                  className="flex items-center gap-2 mx-4 px-7 py-1.5 rounded-full bg-white border border-slate-200 shadow-sm text-xs font-medium text-slate-700"
+                >
+                  <img
+                    src={IOS_TECH_ICONS[tech]}
+                    alt={tech}
+                    className="w-4 h-4"
+                  />
+                  {tech}
+                </div>
+              ))}
+          </div>
+        </div>
+        <div className=" mt-[80px] mx-auto px-[5%]">
           <Reveal className="    mx-auto mb-16">
             <span className="section-label text-blue-600 mb-4 block">
               Why Choose Us

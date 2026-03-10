@@ -315,7 +315,7 @@ animation: pan-grad 5s ease infinite;
         {/* illustration */}
         <div
           style={{
-            flex: "1 1 700px",
+            flex: "1 1 800px",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -335,15 +335,15 @@ animation: pan-grad 5s ease infinite;
             />
             <Image
               src="https://cdni.iconscout.com/illustration/premium/thumb/ui-ux-designers-team-working-together-illustration-svg-download-png-6207662.png"
-              width={1000}
-              height={800}
+              width={1600}
+              height={1100}
               alt="UI UX Design"
               className="float-img"
               style={{
                 width: "100%",
-                maxWidth: 850, // increased from 480
-                transform: "scale(1.1)", // slightly larger visual size
-                filter: "drop-shadow(0 30px 60px rgba(37,99,235,.18))",
+                maxWidth: 1500, // bigger image
+                transform: "scale(1.18)", // stronger visual size
+                filter: "drop-shadow(0 40px 80px rgba(37,99,235,.20))",
               }}
             />
           </div>
@@ -590,7 +590,7 @@ const Process = () => {
   const hRef = useReveal();
   return (
     <section style={{ padding: "46px 24px", background: "var(--cream)" }}>
-      <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+      <div style={{ maxWidth: 1380, margin: "0 auto" }}>
         <div ref={hRef} className="reveal" style={{ marginBottom: 52 }}>
           <div className="sec-label" style={{}}>
             How we work
@@ -724,7 +724,7 @@ const Tools = () => {
   const hRef = useReveal();
   return (
     <section style={{ padding: "46px 24px", background: "var(--white)" }}>
-      <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+      <div style={{ maxWidth: 1380, margin: "0 auto" }}>
         <div ref={hRef} className="reveal" style={{ marginBottom: 52 }}>
           <div className="sec-label" style={{}}>
             Our toolkit
@@ -753,7 +753,7 @@ const Tools = () => {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(240px,1fr))",
+            gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))",
             gap: 16,
           }}
         >
@@ -850,7 +850,7 @@ const Portfolio = () => {
       id="work"
       style={{ padding: "46px 24px", background: "var(--cream)" }}
     >
-      <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+      <div style={{ maxWidth: 1380, margin: "0 auto" }}>
         <div ref={hRef} className="reveal" style={{ marginBottom: 52 }}>
           <div className="sec-label" style={{}}>
             Our work

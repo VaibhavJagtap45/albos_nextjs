@@ -1,9 +1,16 @@
 {
-  "/services/socialMedia-marketing/page": "app/services/socialMedia-marketing/page.js",
+  "/services/website-development-services-company/page": "app/services/website-development-services-company/page.js",
   "/services/digital-marketing-seo/page": "app/services/digital-marketing-seo/page.js",
-  "/services/blockchain-development-company/page": "app/services/blockchain-development-company/page.js",
-  "/services/erp-crm-development/page": "app/services/erp-crm-development/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
   "/services/android-app-development-services/page": "app/services/android-app-development-services/page.js",
-  "/services/ios-app-development/page": "app/services/ios-app-development/page.js"
+  "/services/ios-app-development/page": "app/services/ios-app-development/page.js",
+  "/services/api-development-services/page": "app/services/api-development-services/page.js",
+  "/services/socialMedia-marketing/page": "app/services/socialMedia-marketing/page.js",
+  "/services/mobile-game-development-company/page": "app/services/mobile-game-development-company/page.js",
+  "/services/erp-crm-development/page": "app/services/erp-crm-development/page.js",
+  "/services/blockchain-development-company/page": "app/services/blockchain-development-company/page.js",
+  "/services/web-hosting-services/page": "app/services/web-hosting-services/page.js",
+  "/page": "app/page.js",
+  "/portfolio/page": "app/portfolio/page.js",
+  "/about/page": "app/about/page.js",
+  "/contact/page": "app/contact/page.js"
 }

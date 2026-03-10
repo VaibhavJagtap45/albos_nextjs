@@ -224,7 +224,6 @@ const IoTDevelopmentPage = () => {
                   color: "#1d4ed8",
                   borderRadius: 999,
                   padding: "6px 16px",
-                  fontSize: 13,
                   fontWeight: 600,
                   marginBottom: 24,
                   fontFamily: "DM Sans, sans-serif",
@@ -245,7 +244,7 @@ const IoTDevelopmentPage = () => {
                 className="hero-h"
                 style={{
                   fontSize: "clamp(2rem,4vw,3.2rem)",
-                  fontWeight: 800,
+                  fontWeight: 600,
                   lineHeight: 1.12,
                   letterSpacing: "-0.03em",
                   color: "var(--ink)",
@@ -284,7 +283,7 @@ const IoTDevelopmentPage = () => {
                 style={{ display: "flex", flexWrap: "wrap", gap: 14 }}
               >
                 <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
-                  Get a Free Quote <PhoneCall size={16} />
+                  Get a Free Quote
                 </button>
                 <button
                   style={{

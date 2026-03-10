@@ -134,6 +134,20 @@ function Particles() {
   );
 }
 
+const MARKETING_ICONS = {
+  "Meta Ads": "https://cdn.simpleicons.org/meta/0866FF",
+  "LinkedIn B2B": "https://cdn.simpleicons.org/linkedin/0A66C2",
+  "YouTube SEO": "https://cdn.simpleicons.org/youtube/FF0000",
+  "Instagram Growth": "https://cdn.simpleicons.org/instagram/E4405F",
+  "Retargeting Funnels": "https://cdn.simpleicons.org/googleanalytics/E37400",
+  "ROAS Optimization": "https://cdn.simpleicons.org/googleads/4285F4",
+  "Content Strategy": "https://cdn.simpleicons.org/notion/000000",
+  "A/B Testing": "https://cdn.simpleicons.org/optimizely/FF6A00",
+  "Analytics & ROI": "https://cdn.simpleicons.org/googleanalytics/E37400",
+  "Brand Building": "https://cdn.simpleicons.org/canva/00C4CC",
+  "Influencer Marketing": "https://cdn.simpleicons.org/tiktok/000000",
+  "Demand Generation": "https://cdn.simpleicons.org/hubspot/FF7A59",
+};
 const TICKS = [
   "Meta Ads",
   "LinkedIn B2B",
@@ -179,13 +193,12 @@ function Ticker() {
               gap: 8,
             }}
           >
-            <span
+            <img
+              src={MARKETING_ICONS[t]}
+              alt={t}
               style={{
-                width: 5,
-                height: 5,
-                borderRadius: "50%",
-                background: "#3b82f6",
-                display: "inline-block",
+                width: 16,
+                height: 16,
               }}
             />
             {t}
@@ -804,7 +817,7 @@ export default function DigitalMarketing() {
               <h1
                 style={{
                   fontSize: "clamp(2rem,4vw,3.2rem)",
-                  fontWeight: 800,
+                  fontWeight: 600,
                   fontFamily: " sans-serif",
                   lineHeight: 1.1,
                   color: "#0f172a",
@@ -822,24 +835,6 @@ export default function DigitalMarketing() {
                   >
                     Marketing Services
                   </span>
-                  <svg
-                    style={{
-                      position: "absolute",
-                      bottom: -4,
-                      left: 0,
-                      width: "100%",
-                    }}
-                    viewBox="0 0 260 10"
-                    preserveAspectRatio="none"
-                  >
-                    <path
-                      d="M2 7 Q130 2 258 7"
-                      stroke="#3b82f6"
-                      strokeWidth="2.5"
-                      fill="none"
-                      strokeLinecap="round"
-                    />
-                  </svg>
                 </span>
               </h1>
             </Reveal>
@@ -2384,7 +2379,7 @@ export default function DigitalMarketing() {
       {/* CONTACT */}
       <section
         style={{
-          padding: "80px clamp(16px,4vw,48px) 96px",
+          padding: "40px clamp(16px,4vw,48px) 66px",
           background:
             "linear-gradient(135deg,#dbeafe 0%,#dbeafe 50%,#dbeafe 100%)",
           position: "relative",
@@ -2435,7 +2430,7 @@ export default function DigitalMarketing() {
               <h2
                 style={{
                   fontSize: "clamp(1.7rem,3vw,2.4rem)",
-                  fontWeight: 800,
+                  fontWeight: 600,
                   fontFamily: " sans-serif",
                   color: "#0f172a",
                   marginBottom: 12,

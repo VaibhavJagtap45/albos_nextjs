@@ -796,13 +796,13 @@ const Hero = () => (
             />
             <Image
               src="https://cdni.iconscout.com/illustration/premium/thumb/web-hosting-service-illustration-svg-download-png-4363159.png"
-              width={800}
-              height={600}
+              width={1600}
+              height={1100}
               alt="Web Hosting"
               className="floater"
               style={{
                 width: "100%",
-                maxWidth: 460,
+                maxWidth: 1160,
                 filter: "drop-shadow(0 28px 52px rgba(29,78,216,.14))",
               }}
             />
@@ -936,19 +936,58 @@ const Hero = () => (
 /* ─── Ticker ────────────────────────────────────────────── */
 const Ticker = () => {
   const items = [
-    "Shared Hosting",
-    "VPS Servers",
-    "Dedicated Servers",
-    "Domain Registration",
-    "Free SSL",
-    "DDoS Protection",
-    "NVMe SSD",
-    "99.9% Uptime",
-    "24/7 Support",
-    "CDN Included",
-    "Free Migration",
-    "Daily Backups",
+    {
+      name: "Shared Hosting",
+      icon: "https://cdn-icons-png.flaticon.com/512/4248/4248443.png",
+    },
+    {
+      name: "VPS Servers",
+      icon: "https://cdn-icons-png.flaticon.com/512/4248/4248449.png",
+    },
+    {
+      name: "Dedicated Servers",
+      icon: "https://cdn-icons-png.flaticon.com/512/1792/1792890.png",
+    },
+    {
+      name: "Domain Registration",
+      icon: "https://cdn-icons-png.flaticon.com/512/2920/2920277.png",
+    },
+    {
+      name: "Free SSL",
+      icon: "https://cdn-icons-png.flaticon.com/512/3064/3064197.png",
+    },
+    {
+      name: "DDoS Protection",
+      icon: "https://cdn-icons-png.flaticon.com/512/484/484167.png",
+    },
+    {
+      name: "NVMe SSD",
+      icon: "https://cdn-icons-png.flaticon.com/512/2721/2721291.png",
+    },
+    {
+      name: "99.9% Uptime",
+      icon: "https://cdn-icons-png.flaticon.com/512/190/190411.png",
+    },
+    {
+      name: "24/7 Support",
+      icon: "https://cdn-icons-png.flaticon.com/512/597/597177.png",
+    },
+    {
+      name: "CDN Included",
+      icon: "https://cdn-icons-png.flaticon.com/512/2885/2885417.png",
+    },
+    {
+      name: "Free Migration",
+      icon: "https://cdn-icons-png.flaticon.com/512/3209/3209265.png",
+    },
+    {
+      name: "Daily Backups",
+      icon: "https://cdn-icons-png.flaticon.com/512/1024/1024826.png",
+    },
   ];
+
+  const doubled = [...items, ...items];
+
   return (
     <div
       style={{
@@ -960,14 +999,14 @@ const Ticker = () => {
     >
       <div className="ticker-wrap">
         <div className="ticker-inner">
-          {[...items, ...items].map((t, i) => (
+          {doubled.map((item, i) => (
             <span
               key={i}
               style={{
-                padding: "0 28px",
+                padding: "0 26px",
                 fontSize: ".7rem",
                 fontWeight: 700,
-                color: "rgb(14, 14, 14)",
+                color: "rgb(14,14,14)",
                 whiteSpace: "nowrap",
                 letterSpacing: ".14em",
                 textTransform: "uppercase",
@@ -976,19 +1015,14 @@ const Ticker = () => {
                 gap: 10,
               }}
             >
-              {t}
-              <span
-                style={{
-                  display: "inline-flex",
-                  width: 5,
-                  height: 5,
-                  borderRadius: "50%",
-                  background:
-                    "linear-gradient(135deg,var(--blue2),var(--cyan))",
-                  flexShrink: 0,
-                  opacity: 0.8,
-                }}
+              <Image
+                src={item.icon}
+                alt={item.name}
+                width={16}
+                height={16}
+                style={{ objectFit: "contain" }}
               />
+              {item.name}
             </span>
           ))}
         </div>

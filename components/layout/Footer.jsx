@@ -47,7 +47,7 @@ export default function Footer() {
       {/* Gold accent */}
       <div className="absolute top-0 left-[5%] w-64 h-px bg-gradient-to-r from-amber-400 to-transparent opacity-60" />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
         {/* Brand */}
         <div>
           <Link href="/" className="flex items-center gap-2 mb-3">
@@ -70,7 +70,7 @@ export default function Footer() {
 
         {/* Services */}
         <div>
-          <h5 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-4">
+          <h5 className="text-[10px] font-bold uppercase tracking-widest  mb-4 text-[#007aff]">
             Services
           </h5>
 
@@ -87,7 +87,7 @@ export default function Footer() {
 
         {/* Company */}
         <div>
-          <h5 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-4">
+          <h5 className="text-[10px] font-bold uppercase tracking-widest  mb-4 text-[#007aff]">
             Company
           </h5>
 
@@ -104,7 +104,7 @@ export default function Footer() {
 
         {/* Legal + Contact */}
         <div>
-          <h5 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-4">
+          <h5 className="text-[10px] font-bold uppercase tracking-widest  mb-4 text-[#007aff]">
             Legal
           </h5>
 
@@ -117,8 +117,9 @@ export default function Footer() {
               {l}
             </a>
           ))}
-
-          <h5 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3 mt-5">
+        </div>
+        <div>
+          <h5 className="text-[10px] font-bold uppercase tracking-widest  mb-4 text-[#007aff]">
             Contact
           </h5>
 

@@ -715,11 +715,11 @@ export default function SocialMediaMarketing() {
             display: "flex",
             flexWrap: "wrap",
             alignItems: "center",
-            gap: 128,
+            gap: 68,
             // justifyContent: "space-between",
           }}
         >
-          <div style={{ flex: "1 1 420px", maxWidth: 580 }}>
+          <div style={{ flex: "1 1 420px", maxWidth: 880 }}>
             <Reveal>
               <div
                 style={{
@@ -769,24 +769,6 @@ background-clip:text;
 animation: pan-grad 5s ease infinite;
 `}</style>
                   <span className="grad-text">Revenue Engine</span>
-                  <svg
-                    style={{
-                      position: "absolute",
-                      bottom: -5,
-                      left: 0,
-                      width: "100%",
-                    }}
-                    viewBox="0 0 220 10"
-                    preserveAspectRatio="none"
-                  >
-                    <path
-                      d="M2 7 Q110 2 218 7"
-                      stroke="#6366f1"
-                      strokeWidth="2.5"
-                      fill="none"
-                      strokeLinecap="round"
-                    />
-                  </svg>
                 </span>
               </h1>
             </Reveal>
@@ -2166,7 +2148,7 @@ animation: pan-grad 5s ease infinite;
       {/* ══ CONTACT ══ */}
       <section
         style={{
-          padding: "80px clamp(16px,4vw,40px) 96px",
+          padding: "40px clamp(16px,4vw,40px) 66px",
           background:
             "linear-gradient(135deg,#dbeafe 0%,#e0e7ff 50%,#ede9fe 100%)",
           position: "relative",
