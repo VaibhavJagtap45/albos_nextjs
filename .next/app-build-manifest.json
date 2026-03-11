@@ -35,6 +35,51 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/contact/page.js"
+    ],
+    "/services/website-development-services-company/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/services/website-development-services-company/page.js"
+    ],
+    "/services/uiux-design-company/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/services/uiux-design-company/page.js"
+    ],
+    "/services/blockchain-development-company/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/services/blockchain-development-company/page.js"
+    ],
+    "/services/android-app-development-services/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/services/android-app-development-services/page.js"
+    ],
+    "/services/ios-app-development/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/services/ios-app-development/page.js"
+    ],
+    "/services/socialMedia-marketing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/services/socialMedia-marketing/page.js"
+    ],
+    "/services/iot-application-development-services/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/services/iot-application-development-services/page.js"
+    ],
+    "/services/telecalling-support/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/services/telecalling-support/page.js"
+    ],
+    "/services/digital-marketing-seo/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/services/digital-marketing-seo/page.js"
     ]
   }
 }

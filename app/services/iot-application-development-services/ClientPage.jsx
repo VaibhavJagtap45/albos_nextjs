@@ -375,15 +375,15 @@ const IoTDevelopmentPage = () => {
         {/* Stats bar */}
         <div
           className="reveal"
-          style={{ maxWidth: 1580, margin: "64px auto 0 0", padding: "0 5%" }}
+          style={{ maxWidth: 700, margin: "10px auto 0 0", padding: "0 5%" }}
         >
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit,minmax(160px,1fr))",
+              gridTemplateColumns: "repeat(auto-fit,minmax(80px,1fr))",
               gap: 1,
               background: "var(--border)",
-              borderRadius: 20,
+              borderRadius: 10,
               overflow: "hidden",
               boxShadow: "0 4px 24px rgba(0,0,0,0.06)",
             }}
@@ -398,13 +398,13 @@ const IoTDevelopmentPage = () => {
                 key={i}
                 style={{
                   background: "#fff",
-                  padding: "28px 24px",
+                  padding: "14px 12px",
                 }}
               >
                 <div
                   style={{
-                    fontSize: "2rem",
-                    fontWeight: 800,
+                    fontSize: "1.5rem",
+                    fontWeight: 700,
                     fontFamily: "Syne,sans-serif",
                     color: "#2563eb",
                     lineHeight: 1,
@@ -416,7 +416,7 @@ const IoTDevelopmentPage = () => {
                   style={{
                     fontSize: "0.85rem",
                     color: "var(--ink-3)",
-                    marginTop: 6,
+                    marginTop: 5,
                     fontWeight: 500,
                   }}
                 >
@@ -446,11 +446,10 @@ const IoTDevelopmentPage = () => {
                 marginBottom: 20,
               }}
             >
-              A Trusted Partner for{" "}
+              A Trusted Partner for <br></br>
               <span
                 style={{
                   color: "#2563eb",
-                  borderBottom: "3px solid #93c5fd",
                   paddingBottom: 2,
                 }}
               >

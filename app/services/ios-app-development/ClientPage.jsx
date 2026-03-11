@@ -743,7 +743,7 @@ export default function IosDevelopment() {
               ].map((s, i) => (
                 <div
                   key={i}
-                  className="rounded-2xl bg-white border border-slate-100 shadow-sm p-4   hover:shadow-md hover:border-blue-200 transition-all"
+                  className="rounded-2xl  p-4  transition-all"
                   style={{
                     animation: `count-pop .6s cubic-bezier(.34,1.56,.64,1) ${700 + i * 100}ms both`,
                   }}

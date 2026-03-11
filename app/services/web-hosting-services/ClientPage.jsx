@@ -58,13 +58,7 @@ const CSS = `
 .rv-right.on { opacity:1; transform:translateX(0); }
 
 /* ── Headline underline ── */
-.h-ul { position:relative; display:inline; }
-.h-ul::after {
-  content:''; position:absolute; bottom:-6px; left:0; right:0; height:5px;
-  background:linear-gradient(90deg, var(--blue), var(--cyan));
-  border-radius:6px; transform-origin:left; transform:scaleX(0);
-  animation:slideX .9s cubic-bezier(.22,1,.36,1) 1.1s forwards;
-}
+
 
 /* ── Float animation ── */
 .floater { animation:floatY 7s ease-in-out infinite; }

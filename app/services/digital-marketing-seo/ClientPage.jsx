@@ -773,7 +773,7 @@ export default function DigitalMarketing() {
         <div
           className="hero-wrap"
           style={{
-            maxWidth: 1480,
+            maxWidth: 1780,
             margin: "0 auto",
             padding: "0 clamp(16px,4vw,48px)",
             display: "flex",
@@ -866,28 +866,7 @@ export default function DigitalMarketing() {
                 <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
                   Get a Free Quote
                 </button>
-                <button
-                  style={{
-                    background: "#0f172a",
-                    color: "white",
-                    border: "none",
-                    borderRadius: 13,
-                    padding: "14px 30px",
-                    fontSize: 15,
-                    fontWeight: 600,
-                    cursor: "pointer",
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: 8,
-                    transition: "all .3s",
-                  }}
-                  onMouseEnter={(e) =>
-                    (e.currentTarget.style.background = "#1e293b")
-                  }
-                  onMouseLeave={(e) =>
-                    (e.currentTarget.style.background = "#0f172a")
-                  }
-                >
+                <button className="border border-slate-300 inline-flex items-center gap-2 px-8 py-4 rounded-2xl font-semibold text-slate-700 text-base hover:bg-slate-50 transition">
                   View Our Work <Video size={14} />
                 </button>
               </div>
@@ -935,20 +914,14 @@ export default function DigitalMarketing() {
             </div>
           </Reveal>
         </div>
-      </section>
-
-      <Ticker />
-
-      {/* STATS */}
-      <section
-        style={{ padding: "34px clamp(16px,4vw,48px)", background: "#f8fafc" }}
-      >
+        {/* STATS */}
         <div
           style={{
-            maxWidth: 1100,
-            margin: "0 auto",
+            maxWidth: 600,
+            // margin: "0 40",
+            marginLeft: "60px",
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(180px,1fr))",
+            gridTemplateColumns: "repeat(auto-fit,minmax(80px,1fr))",
             gap: 14,
           }}
         >
@@ -987,18 +960,18 @@ export default function DigitalMarketing() {
                 className="dm-card"
                 style={{
                   background: "white",
-                  borderRadius: 18,
-                  padding: "22px 16px",
+                  borderRadius: 10,
+                  padding: "10px 8px",
                   border: "1px solid #e2e8f0",
                   boxShadow: "0 3px 14px rgba(0,0,0,0.05)",
                   textAlign: "center",
                 }}
               >
-                <div style={{ fontSize: 26, marginBottom: 4 }}>{s.icon}</div>
+                <div style={{ fontSize: 16, marginBottom: 4 }}>{s.icon}</div>
                 <div
                   style={{
-                    fontSize: 34,
-                    fontWeight: 800,
+                    fontSize: 18,
+                    fontWeight: 600,
                     color: s.c,
                     fontFamily: " sans-serif",
                     lineHeight: 1,
@@ -1021,6 +994,8 @@ export default function DigitalMarketing() {
           ))}
         </div>
       </section>
+
+      <Ticker />
 
       {/* CHALLENGES */}
       <section

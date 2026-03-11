@@ -547,73 +547,6 @@ function ProcessSection() {
 }
 
 /* ─────────────────── STATS BAR (new) ─────────────────── */
-function StatsBar() {
-  const stats = [
-    { num: "120+", label: "Web3 Projects" },
-    { num: "40+", label: "Smart Contracts Audited" },
-    { num: "$2B+", label: "TVL Secured" },
-    { num: "15+", label: "Blockchains Supported" },
-    { num: "99.9%", label: "Contract Uptime" },
-  ];
-  return (
-    <section
-      className="bg-white mb-6"
-      style={{
-        borderTop: "1px solid #e2e8f0",
-        borderBottom: "1px solid #e2e8f0",
-      }}
-    >
-      <div className="max-w-screen-2xl mx-auto px-[5%]">
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(150px,1fr))",
-            borderLeft: "1px solid #e2e8f0",
-          }}
-        >
-          {stats.map((s, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.08 }}
-              style={{
-                borderRight: "1px solid #e2e8f0",
-                borderTop: "1px solid #e2e8f0",
-                borderBottom: "1px solid #e2e8f0",
-                padding: "28px 16px",
-                textAlign: "center",
-              }}
-            >
-              <div
-                style={{
-                  fontFamily: "Georgia, serif",
-                  fontSize: "2rem",
-                  fontWeight: 800,
-                  color: "#1d4ed8",
-                  lineHeight: 1,
-                }}
-              >
-                {s.num}
-              </div>
-              <div
-                style={{
-                  fontSize: "0.75rem",
-                  color: "#64748b",
-                  marginTop: 6,
-                  fontWeight: 500,
-                }}
-              >
-                {s.label}
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 /* ─────────────────── TESTIMONIALS (new) ─────────────────── */
 function Testimonials() {
@@ -819,7 +752,7 @@ const Hero = () => (
           </p>
 
           <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center md:justify-start">
-            <motion.button
+            <button
               whileTap={{ scale: 0.98 }}
               whileHover={{
                 y: -2,
@@ -837,27 +770,20 @@ const Hero = () => (
               >
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
-            </motion.button>
-            <motion.button
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 10px 25px -5px rgba(0,0,0,0.3)",
-              }}
-              whileTap={{ scale: 0.98 }}
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-slate-900 text-white font-medium text-base sm:text-lg shadow-lg"
-            >
+            </button>
+            <button className="transition-all duration-200 border-2 border-blue-200 hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 inline-flex items-center gap-2 px-8 py-4 rounded-2xl font-semibold text-slate-700 text-base hover:bg-slate-50 transition">
               View Our Work
               <svg
                 className="w-4 h-4"
-                viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
+                viewBox="0 0 24 24"
               >
+                <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
                 <rect x="2" y="6" width="14" height="12" rx="2" />
-                <path d="m16 13 5.223 3.482" />
               </svg>
-            </motion.button>
+            </button>
           </div>
 
           {/* Quick stats */}
@@ -1390,7 +1316,7 @@ export default function BlockchainAndWeb3() {
     <div className="antialiased text-slate-900 overflow-x-hidden">
       <main>
         <Hero />
-        <StatsBar />
+        {/* <StatsBar /> */}
         <Ticker />
         <WhyChoose />
         <ProcessSection />

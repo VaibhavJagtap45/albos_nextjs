@@ -254,7 +254,14 @@ function HeroVisual() {
   }, []);
 
   return (
-    <div style={{ position: "relative", width: "100%", maxWidth: 480 }}>
+    <div
+      style={{
+        position: "relative",
+        marginTop: 50,
+        width: "100%",
+        maxWidth: 480,
+      }}
+    >
       {/* Main card */}
       <div
         style={{
@@ -646,7 +653,7 @@ export default function SocialMediaMarketing() {
       <section
         style={{
           position: "relative",
-          padding: "clamp(72px,10vw,110px) 0 80px",
+          padding: "clamp(72px,10vw,110px) 0 -20px",
           overflow: "hidden",
           background:
             "linear-gradient(155deg,#f5f3ff 0%,#ffffff 55%,#eff6ff 100%)",
@@ -710,7 +717,7 @@ export default function SocialMediaMarketing() {
         <div
           style={{
             maxWidth: 1480,
-            margin: "0 auto",
+            margin: "60px auto",
             padding: "0 clamp(16px,4vw,40px)",
             display: "flex",
             flexWrap: "wrap",
@@ -799,29 +806,18 @@ animation: pan-grad 5s ease infinite;
                 <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
                   Get a Free Quote
                 </button>
-                <button
-                  style={{
-                    background: "#0f172a",
-                    color: "white",
-                    border: "none",
-                    borderRadius: 13,
-                    padding: "14px 32px",
-                    fontSize: 15,
-                    fontWeight: 600,
-                    cursor: "pointer",
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: 8,
-                    transition: "all .3s",
-                  }}
-                  onMouseEnter={(e) =>
-                    (e.currentTarget.style.background = "#1e293b")
-                  }
-                  onMouseLeave={(e) =>
-                    (e.currentTarget.style.background = "#0f172a")
-                  }
-                >
-                  View Our Work <Eye size={15} />
+                <button className="border border-slate-300 inline-flex items-center gap-2 px-8 py-4 rounded-2xl font-semibold text-slate-700 text-base hover:bg-slate-50 transition">
+                  View Our Work
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
+                    <rect x="2" y="6" width="14" height="12" rx="2" />
+                  </svg>
                 </button>
               </div>
             </Reveal>
@@ -860,19 +856,21 @@ animation: pan-grad 5s ease infinite;
           </Reveal>
         </div>
       </section>
-
-      <Ticker />
-
       {/* ══ STATS ══ */}
       <section
-        style={{ padding: "34px clamp(16px,4vw,40px)", background: "#f8faff" }}
+        style={{
+          padding: "12px clamp(8px,2vw,10px)",
+          marginBottom: "40px",
+          background: "#f8faff",
+        }}
       >
         <div
           style={{
-            maxWidth: 1100,
-            margin: "0 auto",
+            maxWidth: 700,
+            margin: "0",
+
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(180px,1fr))",
+            gridTemplateColumns: "repeat(auto-fit,minmax(80px,1fr))",
             gap: 16,
           }}
         >
@@ -887,17 +885,17 @@ animation: pan-grad 5s ease infinite;
                 className="sm-card"
                 style={{
                   background: "white",
-                  borderRadius: 20,
-                  padding: "24px 18px",
+                  borderRadius: 10,
+                  padding: "12px 8px",
                   border: "1px solid #e2e8f0",
                   boxShadow: "0 4px 18px rgba(99,102,241,0.07)",
                   textAlign: "center",
                 }}
               >
-                <div style={{ fontSize: 28, marginBottom: 5 }}>{s.icon}</div>
+                <div style={{ fontSize: 16, marginBottom: 5 }}>{s.icon}</div>
                 <div
                   style={{
-                    fontSize: 36,
+                    fontSize: 18,
                     fontWeight: 800,
                     color: "#4f46e5",
                     lineHeight: 1,
@@ -920,6 +918,7 @@ animation: pan-grad 5s ease infinite;
           ))}
         </div>
       </section>
+      <Ticker />
 
       {/* ══ WHY FAIL ══ */}
       <section

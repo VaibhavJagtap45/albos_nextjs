@@ -1,5 +1,10 @@
 {
-  "/services/web-hosting-services/page": "app/services/web-hosting-services/page.js",
-  "/about/page": "app/about/page.js",
-  "/contact/page": "app/contact/page.js"
+  "/services/iot-application-development-services/page": "app/services/iot-application-development-services/page.js",
+  "/services/android-app-development-services/page": "app/services/android-app-development-services/page.js",
+  "/services/ios-app-development/page": "app/services/ios-app-development/page.js",
+  "/services/socialMedia-marketing/page": "app/services/socialMedia-marketing/page.js",
+  "/services/digital-marketing-seo/page": "app/services/digital-marketing-seo/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/services/website-development-services-company/page": "app/services/website-development-services-company/page.js",
+  "/icon.png/route": "app/icon.png/route.js"
 }

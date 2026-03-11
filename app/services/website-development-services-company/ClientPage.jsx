@@ -451,7 +451,7 @@ animation:ripple 2s ease-out infinite;
             </div>
 
             <h1
-              className="serif text-5xl sm:text-6xl md:text-[3.8rem] lg:text-[4.4rem] font-bold leading-[1.06] mb-7 hero-enter"
+              className="serif text-5xl sm:text-6xl md:text-[3.8rem] lg:text-[4.4rem] font-bold leading-[1.06] mb-4 hero-enter"
               style={{ animationDelay: "120ms" }}
             >
               Build Future-Ready
@@ -462,7 +462,7 @@ animation:ripple 2s ease-out infinite;
             </h1>
 
             <p
-              className="text-lg text-slate-600 leading-relaxed max-w-xl mb-10 hero-enter"
+              className="text-lg text-slate-600 leading-relaxed max-w-xl mb-s hero-enter"
               style={{ animationDelay: "240ms" }}
             >
               Albos Technologies delivers scalable, secure and cloud-optimised
@@ -471,7 +471,7 @@ animation:ripple 2s ease-out infinite;
             </p>
 
             <div
-              className="flex flex-wrap gap-4 mb-14 hero-enter"
+              className="flex flex-wrap gap-4 mb-4 hero-enter"
               style={{ animationDelay: "360ms" }}
             >
               <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
@@ -732,7 +732,7 @@ animation:ripple 2s ease-out infinite;
         </div>
 
         {/* Ticker */}
-        <div className="absolute bottom-0 left-0 right-0 bg-white/80 backdrop-blur-sm border-t border-slate-100 py-3 overflow-hidden">
+        <div className="absolute bottom-0 mt-6 left-0 right-0 bg-white/80 backdrop-blur-sm border-t border-slate-100 py-3 overflow-hidden">
           <div className="flex items-center gap-4 whitespace-nowrap animate-[scroll_28s_linear_infinite] w-max">
             {doubled.map((chip, i) => (
               <div
