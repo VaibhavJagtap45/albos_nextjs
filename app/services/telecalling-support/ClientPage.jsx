@@ -741,28 +741,7 @@ export default function TelecallingAndSupportServices() {
                 <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
                   Get a Free Quote
                 </button>
-                <button
-                  style={{
-                    background: "#0f172a",
-                    color: "white",
-                    border: "none",
-                    borderRadius: 13,
-                    padding: "14px 32px",
-                    fontSize: 15,
-                    fontWeight: 600,
-                    cursor: "pointer",
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: 8,
-                    transition: "all 0.3s",
-                  }}
-                  onMouseEnter={(e) =>
-                    (e.currentTarget.style.background = "#1e293b")
-                  }
-                  onMouseLeave={(e) =>
-                    (e.currentTarget.style.background = "#0f172a")
-                  }
-                >
+                <button className="transition-all duration-200 border-2 border-blue-200 hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 inline-flex items-center gap-2 px-8 py-4 rounded-2xl font-semibold text-slate-700 text-base hover:bg-slate-50 transition">
                   View Our Work <ArrowRight size={15} />
                 </button>
               </div>

@@ -866,7 +866,7 @@ export default function DigitalMarketing() {
                 <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
                   Get a Free Quote
                 </button>
-                <button className="border border-slate-300 inline-flex items-center gap-2 px-8 py-4 rounded-2xl font-semibold text-slate-700 text-base hover:bg-slate-50 transition">
+                <button className="transition-all duration-200 border-2 border-blue-200 hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 inline-flex items-center gap-2 px-8 py-4 rounded-2xl font-semibold text-slate-700 text-base hover:bg-slate-50 transition">
                   View Our Work <Video size={14} />
                 </button>
               </div>
