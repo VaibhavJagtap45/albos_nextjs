@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
 /* ═══════════════════════════════════════════════════════════════
-   GLOBAL CSS — same theme, dramatically enhanced aesthetics
+   GLOBAL CSS
 ═══════════════════════════════════════════════════════════════ */
 const CSS = `
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
@@ -46,11 +46,7 @@ const CSS = `
 @keyframes floatY    { 0%,100%{transform:translateY(0) rotate(0deg)} 50%{transform:translateY(-14px) rotate(.5deg)} }
 @keyframes marquee   { from{transform:translateX(0)} to{transform:translateX(-50%)} }
 @keyframes ripple    { 0%{transform:scale(1);opacity:.5} 100%{transform:scale(2.8);opacity:0} }
-@keyframes shimmer   { from{background-position:200% center} to{background-position:-200% center} }
 @keyframes blobA     { 0%,100%{border-radius:60% 40% 30% 70%/60% 30% 70% 40%} 50%{border-radius:30% 60% 70% 40%/50% 60% 30% 60%} }
-@keyframes blobB     { 0%,100%{border-radius:40% 60% 70% 30%/40% 50% 60% 50%} 50%{border-radius:60% 40% 30% 70%/60% 30% 70% 40%} }
-@keyframes pulseGlow { 0%,100%{box-shadow:0 0 0 0 rgba(29,78,216,.25)} 50%{box-shadow:0 0 0 12px rgba(29,78,216,0)} }
-@keyframes countUp   { from{opacity:0;transform:scale(.8)} to{opacity:1;transform:scale(1)} }
 @keyframes badgeIn   { from{opacity:0;transform:scale(.7) translateY(-8px)} to{opacity:1;transform:scale(1) translateY(0)} }
 
 /* ── Scroll reveal ── */
@@ -142,10 +138,6 @@ const CSS = `
 .btn-outline:hover { background:var(--blue-lt); border-color:var(--blue); transform:translateY(-2px); color:var(--blue); }
 
 /* ── Section label ── */
-.slabel {
-  font-size:.68rem; font-weight:800; letter-spacing:.2em; text-transform:uppercase;
-  color:var(--blue); display:flex; align-items:center; gap:10px; margin-bottom:14px;
-}
 .slabel-pill {
   background:var(--blue-lt); color:var(--blue);
   padding:5px 14px; border-radius:999px;
@@ -223,6 +215,7 @@ const CSS = `
   background:var(--white); display:flex; flex-direction:column; gap:14px;
   transition:transform .28s cubic-bezier(.22,1,.36,1), box-shadow .28s, border-color .22s;
   box-shadow:var(--shadow-sm); overflow:hidden; position:relative;
+  text-decoration:none; color:inherit;
 }
 .c-card::after {
   content:''; position:absolute; top:0; left:0; right:0; height:3px;
@@ -236,7 +229,7 @@ const CSS = `
 .c-icon {
   width:50px; height:50px; border-radius:14px;
   background:var(--blue-lt); display:flex; align-items:center; justify-content:center;
-  transition:background .25s, transform .25s; flex-shrink:0; color:var(--blue);
+  transition:background .25s, transform .25s; flex-shrink:0;
 }
 .c-card:hover .c-icon { background:var(--blue); color:#fff; transform:scale(1.08) rotate(-4deg); }
 
@@ -263,10 +256,17 @@ const CSS = `
   transition:transform .25s;
 }
 .fi-card:hover .fi-icon { transform:scale(1.1) rotate(-4deg); }
+
+/* ── Contact info grid ── */
+.contact-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
 `;
 
 /* ─── hook ─────────────────────────────────────────────── */
-function useRv(cls = "rv", thr = 0.07) {
+function useRv(thr = 0.07) {
   const ref = useRef(null);
   useEffect(() => {
     const el = ref.current;
@@ -290,6 +290,16 @@ function useRv(cls = "rv", thr = 0.07) {
   return ref;
 }
 
+/* ── FIX 1: Reveal wrapper component (was missing, used in ContactSection) ── */
+function Reveal({ children, delay = 0 }) {
+  const ref = useRv();
+  return (
+    <div ref={ref} className="rv" style={{ transitionDelay: `${delay}ms` }}>
+      {children}
+    </div>
+  );
+}
+
 /* ─── Section label pill ── */
 function LabelPill({ text }) {
   return <div className="slabel-pill">{text}</div>;
@@ -301,7 +311,7 @@ function PricingCard({
   price,
   features,
   icon,
-  popular,
+  popular = false,
   accent = "#1d4ed8",
   delay = 0,
 }) {
@@ -321,7 +331,7 @@ function PricingCard({
       className={`rv p-card${popular ? " popular" : ""}`}
       style={{ transitionDelay: `${delay}ms` }}
     >
-      {popular}
+      {/* FIX 2: Ribbon renders based on boolean prop, not {popular} which renders nothing */}
 
       {/* coloured header band */}
       <div
@@ -477,7 +487,7 @@ function PricingCard({
 function Section({ id, bg = "var(--white)", label, title, sub, children }) {
   const hRef = useRv();
   return (
-    <section id={id} style={{ padding: "96px 24px", background: bg }}>
+    <section id={id} style={{ padding: "36px 24px", background: bg }}>
       <div style={{ maxWidth: 1400, margin: "0 auto" }}>
         <div
           ref={hRef}
@@ -526,7 +536,6 @@ const Hero = () => (
       overflow: "hidden",
     }}
   >
-    {/* Grid background */}
     <div
       style={{
         position: "absolute",
@@ -539,8 +548,6 @@ const Hero = () => (
         opacity: 0.3,
       }}
     />
-
-    {/* Gradient orbs */}
     <div
       style={{
         position: "absolute",
@@ -569,8 +576,6 @@ const Hero = () => (
           "radial-gradient(circle,rgba(6,182,212,.06) 0%,transparent 70%)",
       }}
     />
-
-    {/* Animated blobs */}
     <div
       style={{
         position: "absolute",
@@ -604,9 +609,8 @@ const Hero = () => (
           justifyContent: "space-between",
         }}
       >
-        {/* ── Text column ── */}
+        {/* Text column */}
         <div style={{ flex: "1 1 440px", minWidth: 0 }}>
-          {/* Live badge */}
           <div
             style={{
               display: "inline-flex",
@@ -636,7 +640,6 @@ const Hero = () => (
             </span>
           </div>
 
-          {/* Headline */}
           <h1
             style={{
               fontFamily: "'DM Serif Display',serif",
@@ -693,7 +696,6 @@ const Hero = () => (
             enterprise-grade security, and 24/7 expert support.
           </p>
 
-          {/* CTAs */}
           <div
             style={{
               display: "flex",
@@ -708,7 +710,6 @@ const Hero = () => (
             <button className="btn-outline">View Plans →</button>
           </div>
 
-          {/* Stats row */}
           <div
             style={{
               display: "flex",
@@ -755,7 +756,7 @@ const Hero = () => (
           </div>
         </div>
 
-        {/* ── Illustration column ── */}
+        {/* Illustration column */}
         <div
           style={{
             flex: "1 1 300px",
@@ -766,7 +767,6 @@ const Hero = () => (
           }}
         >
           <div style={{ position: "relative" }}>
-            {/* Decorative ring */}
             <div
               style={{
                 position: "absolute",
@@ -784,7 +784,6 @@ const Hero = () => (
                 border: "1px dashed rgba(29,78,216,.07)",
               }}
             />
-            {/* Glow */}
             <div
               style={{
                 position: "absolute",
@@ -806,8 +805,6 @@ const Hero = () => (
                 filter: "drop-shadow(0 28px 52px rgba(29,78,216,.14))",
               }}
             />
-
-            {/* Floating badge 1 */}
             <div
               style={{
                 position: "absolute",
@@ -870,8 +867,6 @@ const Hero = () => (
                 </div>
               </div>
             </div>
-
-            {/* Floating badge 2 */}
             <div
               style={{
                 position: "absolute",
@@ -908,7 +903,7 @@ const Hero = () => (
                   <div
                     style={{
                       height: "100%",
-                      width: "23%",
+                      width: "63%",
                       background:
                         "linear-gradient(90deg,var(--blue),var(--cyan))",
                       borderRadius: 99,
@@ -922,7 +917,7 @@ const Hero = () => (
                     color: "var(--blue)",
                   }}
                 >
-                  23%
+                  63%
                 </span>
               </div>
             </div>
@@ -985,14 +980,12 @@ const Ticker = () => {
       icon: "https://cdn-icons-png.flaticon.com/512/1024/1024826.png",
     },
   ];
-
   const doubled = [...items, ...items];
-
   return (
     <div
       style={{
-        borderTop: "1px solid rgba(255,255,255,.08)",
-        borderBottom: "1px solid rgba(255,255,255,.08)",
+        borderTop: "1px solid rgba(0,0,0,.06)",
+        borderBottom: "1px solid rgba(0,0,0,.06)",
         padding: "14px 0",
         overflow: "hidden",
       }}
@@ -1006,7 +999,7 @@ const Ticker = () => {
                 padding: "0 26px",
                 fontSize: ".7rem",
                 fontWeight: 700,
-                color: "rgb(14,14,14)",
+                color: "#0e0e0e",
                 whiteSpace: "nowrap",
                 letterSpacing: ".14em",
                 textTransform: "uppercase",
@@ -1030,6 +1023,35 @@ const Ticker = () => {
     </div>
   );
 };
+
+/* ── FIX 3: FeatureItem extracted as its own component so useRv is NOT called inside .map() ── */
+function FeatureItem({ icon, title, desc, color, delay }) {
+  const r = useRv();
+  return (
+    <div
+      ref={r}
+      className="rv fi-card"
+      style={{ transitionDelay: `${delay}ms` }}
+    >
+      <div
+        className="fi-icon"
+        style={{ background: `${color}12`, border: `1px solid ${color}22` }}
+      >
+        <span style={{ fontSize: "1.5rem" }}>{icon}</span>
+      </div>
+      <div>
+        <div style={{ fontWeight: 700, fontSize: ".92rem", marginBottom: 6 }}>
+          {title}
+        </div>
+        <div
+          style={{ fontSize: ".82rem", color: "var(--mid)", lineHeight: 1.65 }}
+        >
+          {desc}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 /* ─── Features strip ─────────────────────────────────────── */
 const Features = () => {
@@ -1081,47 +1103,9 @@ const Features = () => {
             gap: 16,
           }}
         >
-          {items.map(({ icon, title, desc, color }, i) => {
-            const r = useRv();
-            return (
-              <div
-                key={i}
-                ref={r}
-                className={`rv fi-card`}
-                style={{ transitionDelay: `${i * 55}ms` }}
-              >
-                <div
-                  className="fi-icon"
-                  style={{
-                    background: `${color}12`,
-                    border: `1px solid ${color}22`,
-                  }}
-                >
-                  <span style={{ fontSize: "1.5rem" }}>{icon}</span>
-                </div>
-                <div>
-                  <div
-                    style={{
-                      fontWeight: 700,
-                      fontSize: ".92rem",
-                      marginBottom: 6,
-                    }}
-                  >
-                    {title}
-                  </div>
-                  <div
-                    style={{
-                      fontSize: ".82rem",
-                      color: "var(--mid)",
-                      lineHeight: 1.65,
-                    }}
-                  >
-                    {desc}
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+          {items.map((item, i) => (
+            <FeatureItem key={i} {...item} delay={i * 55} />
+          ))}
         </div>
       </div>
     </section>
@@ -1317,7 +1301,7 @@ const Dedicated = () => (
   </Section>
 );
 
-/* ─── Domain pill component ─── */
+/* ─── Domain pill ─── */
 function DomainPill({ tld, price, color, delay }) {
   const r = useRv();
   return (
@@ -1416,7 +1400,7 @@ const Domains = () => {
   return (
     <section
       id="domains"
-      style={{ padding: "96px 24px", background: "var(--bg)" }}
+      style={{ padding: "36px 24px", background: "var(--bg)" }}
     >
       <div style={{ maxWidth: 1400, margin: "0 auto" }}>
         <div
@@ -1448,8 +1432,6 @@ const Domains = () => {
             domains.
           </p>
         </div>
-
-        {/* Search bar */}
         <div
           style={{
             maxWidth: 580,
@@ -1470,7 +1452,6 @@ const Domains = () => {
             🔍 Search
           </button>
         </div>
-
         <div
           style={{
             display: "grid",
@@ -1493,121 +1474,35 @@ const Domains = () => {
   );
 };
 
-/* ─── Contact icon ─── */
-function ContactIcon({ type }) {
-  const props = {
-    xmlns: "http://www.w3.org/2000/svg",
-    width: 22,
-    height: 22,
-    fill: "none",
-    viewBox: "0 0 24 24",
-    stroke: "currentColor",
-    strokeWidth: 1.8,
-  };
-  if (type === "phone")
-    return (
-      <svg {...props}>
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
-        />
-      </svg>
-    );
-  if (type === "mail")
-    return (
-      <svg {...props}>
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
-        />
-        <rect x="2" y="4" width="20" height="16" rx="2" />
-      </svg>
-    );
-  if (type === "pin")
-    return (
-      <svg {...props}>
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
-        />
-        <circle cx="12" cy="10" r="3" />
-      </svg>
-    );
-  return (
-    <svg {...props}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l4 2" />
-      <circle cx="12" cy="12" r="10" />
-    </svg>
-  );
-}
-
-const CONTACT_ITEMS = [
-  { label: "Phone", val: "+91 97666 50411", icon: "phone", color: "#1d4ed8" },
-  {
-    label: "Email",
-    val: "info@albostechnologies.com",
-    icon: "mail",
-    color: "#0891b2",
-  },
-  {
-    label: "Location",
-    val: "Kunal Plaza, Pune 411019",
-    icon: "pin",
-    color: "#10b981",
-  },
-  {
-    label: "Office Hours",
-    val: "Mon – Sat, 10:00 AM – 7:00 PM",
-    icon: "clock",
-    color: "#d97706",
-  },
-];
-
-function ContactCard({ label, val, icon, color, delay }) {
-  const r = useRv();
-  return (
-    <div
-      ref={r}
-      className="rv c-card"
-      style={{ transitionDelay: `${delay}ms` }}
-    >
-      <div className="c-icon" style={{ background: `${color}12`, color }}>
-        <ContactIcon type={icon} />
-      </div>
-      <div>
-        <div
-          style={{
-            fontWeight: 800,
-            fontSize: ".82rem",
-            color: "var(--muted)",
-            letterSpacing: ".1em",
-            textTransform: "uppercase",
-            marginBottom: 6,
-          }}
-        >
-          {label}
-        </div>
-        <div
-          style={{
-            fontSize: ".88rem",
-            color: "var(--ink)",
-            lineHeight: 1.65,
-            fontWeight: 500,
-          }}
-        >
-          {val}
-        </div>
-      </div>
-    </div>
-  );
-}
-
 /* ─── Contact section ────────────────────────────────────── */
 const ContactSection = () => {
   const hRef = useRv();
+  const contactItems = [
+    {
+      icon: "📞",
+      label: "Phone",
+      val: "+91 97666 50411",
+      href: "tel:+919766650411",
+    },
+    {
+      icon: "✉️",
+      label: "Email",
+      val: "info@albostechnologies.com",
+      href: "mailto:info@albostechnologies.com",
+    },
+    {
+      icon: "📍",
+      label: "Office",
+      val: "Kunal Plaza, Pune MH 411019",
+      href: null,
+    },
+    {
+      icon: "🕐",
+      label: "Office Hours",
+      val: "Mon–Sat · 10 AM–7 PM IST",
+      href: null,
+    },
+  ];
   return (
     <section style={{ padding: "96px 24px 104px", background: "var(--white)" }}>
       <div style={{ maxWidth: 1400, margin: "0 auto" }}>
@@ -1632,28 +1527,30 @@ const ContactSection = () => {
             boxShadow: "0 32px 80px -20px rgba(29,78,216,.4)",
           }}
         >
-          {/* decorative circles */}
-          {[
-            [-100, -80, 300, 300, 0.04],
-            [200, -50, 200, 200, 0.03],
-            [undefined, undefined, undefined, undefined, 0.0],
-          ]
-            .slice(0, 2)
-            .map(([t, r2, w, h, o], i) => (
-              <div
-                key={i}
-                style={{
-                  position: "absolute",
-                  top: t,
-                  right: r2,
-                  width: w,
-                  height: h,
-                  borderRadius: "50%",
-                  background: `rgba(255,255,255,${o})`,
-                  pointerEvents: "none",
-                }}
-              />
-            ))}
+          <div
+            style={{
+              position: "absolute",
+              top: -100,
+              right: -80,
+              width: 300,
+              height: 300,
+              borderRadius: "50%",
+              background: "rgba(255,255,255,.04)",
+              pointerEvents: "none",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              top: 200,
+              right: -50,
+              width: 200,
+              height: 200,
+              borderRadius: "50%",
+              background: "rgba(255,255,255,.03)",
+              pointerEvents: "none",
+            }}
+          />
           <div
             style={{
               position: "absolute",
@@ -1666,7 +1563,6 @@ const ContactSection = () => {
               pointerEvents: "none",
             }}
           />
-          {/* grid overlay */}
           <div
             style={{
               position: "absolute",
@@ -1741,23 +1637,46 @@ const ContactSection = () => {
           </div>
         </div>
 
-        {/* Contact cards */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(230px,1fr))",
-            gap: 16,
-          }}
-        >
-          {CONTACT_ITEMS.map(({ label, val, icon, color }, i) => (
-            <ContactCard
-              key={label}
-              label={label}
-              val={val}
-              icon={icon}
-              color={color}
-              delay={i * 75}
-            />
+        {/* FIX 4: Contact cards use Reveal component (now defined) + inline styles instead of undefined Tailwind classes */}
+        <div className="contact-grid">
+          {contactItems.map((c, i) => (
+            <Reveal key={i} delay={i * 80}>
+              <a
+                href={c.href || undefined}
+                className="c-card"
+                style={{
+                  textAlign: "center",
+                  alignItems: "center",
+                  cursor: c.href ? "pointer" : "default",
+                  textDecoration: "none",
+                }}
+              >
+                <div style={{ fontSize: "2rem", marginBottom: 4 }}>
+                  {c.icon}
+                </div>
+                <div
+                  style={{
+                    fontSize: ".68rem",
+                    fontWeight: 800,
+                    color: "var(--muted)",
+                    letterSpacing: ".12em",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  {c.label}
+                </div>
+                <div
+                  style={{
+                    fontSize: ".88rem",
+                    fontWeight: 600,
+                    color: "var(--ink)",
+                    lineHeight: 1.55,
+                  }}
+                >
+                  {c.val}
+                </div>
+              </a>
+            </Reveal>
           ))}
         </div>
       </div>
