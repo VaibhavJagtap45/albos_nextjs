@@ -2038,7 +2038,7 @@ export default function TelecallingAndSupportServices() {
               {
                 icon: <MapPin size={20} color="#2563eb" />,
                 title: "Office Location",
-                value: "Office no. 78, 5th floor, Kunal Plaza, Pune, MH 411019",
+                value: "Kunal Plaza, Pune MH 411019",
               },
               {
                 icon: <Clock size={20} color="#2563eb" />,

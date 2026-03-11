@@ -198,7 +198,7 @@ const IoTDevelopmentPage = () => {
         />
         <div
           style={{
-            maxWidth: 1480,
+            maxWidth: 1580,
             margin: "0 auto",
             padding: "0 5%",
             position: "relative",
@@ -375,7 +375,7 @@ const IoTDevelopmentPage = () => {
         {/* Stats bar */}
         <div
           className="reveal"
-          style={{ maxWidth: 1480, margin: "64px auto 0", padding: "0 5%" }}
+          style={{ maxWidth: 1580, margin: "64px auto 0 0", padding: "0 5%" }}
         >
           <div
             style={{
@@ -430,7 +430,7 @@ const IoTDevelopmentPage = () => {
 
       {/* ── TRUSTED PARTNER ── */}
       <section style={{ padding: "50px 0", background: "var(--surface-2)" }}>
-        <div style={{ maxWidth: 1480, margin: "0 auto", padding: "0 5%" }}>
+        <div style={{ maxWidth: 1580, margin: "0 auto", padding: "0 5%" }}>
           <div
             className="reveal"
             style={{
@@ -641,7 +641,7 @@ const IoTDevelopmentPage = () => {
 
       {/* ── WHAT WE DO ── */}
       <section style={{ padding: "50px 0", background: "#fff" }}>
-        <div style={{ maxWidth: 1480, margin: "0 auto", padding: "0 5%" }}>
+        <div style={{ maxWidth: 1580, margin: "0 auto", padding: "0 5%" }}>
           <div
             className="reveal"
             style={{
@@ -754,7 +754,7 @@ const IoTDevelopmentPage = () => {
 
       {/* ── EMBEDDED SERVICES ── */}
       <section style={{ padding: "50px 0", background: "var(--surface-2)" }}>
-        <div style={{ maxWidth: 1480, margin: "0 auto", padding: "0 5%" }}>
+        <div style={{ maxWidth: 1580, margin: "0 auto", padding: "0 5%" }}>
           <div
             className="reveal"
             style={{
@@ -923,7 +923,7 @@ const IoTDevelopmentPage = () => {
 
       {/* ── IOT PLATFORM ── */}
       <section style={{ padding: "50px 0", background: "#fff" }}>
-        <div style={{ maxWidth: 1480, margin: "0 auto", padding: "0 5%" }}>
+        <div style={{ maxWidth: 1580, margin: "0 auto", padding: "0 5%" }}>
           <div
             className="reveal"
             style={{
@@ -1119,7 +1119,7 @@ const IoTDevelopmentPage = () => {
 
       {/* ── HARDWARE EXPERTISE ── */}
       <section style={{ padding: "50px 0", background: "var(--surface-2)" }}>
-        <div style={{ maxWidth: 1480, margin: "0 auto", padding: "0 5%" }}>
+        <div style={{ maxWidth: 1580, margin: "0 auto", padding: "0 5%" }}>
           <div
             className="reveal"
             style={{
@@ -1299,7 +1299,7 @@ const IoTDevelopmentPage = () => {
 
       {/* ── CONNECTIVITY ── */}
       <section style={{ padding: "50px 0", background: "#fff" }}>
-        <div style={{ maxWidth: 1480, margin: "0 auto", padding: "0 5%" }}>
+        <div style={{ maxWidth: 1580, margin: "0 auto", padding: "0 5%" }}>
           <div
             className="reveal"
             style={{
@@ -1583,7 +1583,7 @@ const IoTDevelopmentPage = () => {
 
       {/* ── ARCHITECTURE ── */}
       <section style={{ padding: "50px 0", background: "var(--surface-2)" }}>
-        <div style={{ maxWidth: 1480, margin: "0 auto", padding: "0 5%" }}>
+        <div style={{ maxWidth: 1580, margin: "0 auto", padding: "0 5%" }}>
           <div
             className="reveal"
             style={{
@@ -1763,7 +1763,7 @@ const IoTDevelopmentPage = () => {
 
       {/* ── ENGAGEMENT MODELS ── */}
       <section style={{ padding: "50px 0", background: "#fff" }}>
-        <div style={{ maxWidth: 1480, margin: "0 auto", padding: "0 5%" }}>
+        <div style={{ maxWidth: 1580, margin: "0 auto", padding: "0 5%" }}>
           <div
             className="reveal"
             style={{
@@ -1777,6 +1777,9 @@ const IoTDevelopmentPage = () => {
                 fontWeight: 800,
                 letterSpacing: "-0.03em",
                 marginBottom: 20,
+                alignItems: "center",
+                justifyContent: "center",
+                textAlign: "center",
               }}
             >
               Flexible Engagement Models
@@ -1786,6 +1789,9 @@ const IoTDevelopmentPage = () => {
                 fontSize: "1.05rem",
                 color: "var(--ink-2)",
                 lineHeight: 1.75,
+                alignItems: "center",
+                justifyContent: "center",
+                textAlign: "center",
               }}
             >
               Choose an engagement model that aligns with your project scope,
@@ -1944,7 +1950,7 @@ const IoTDevelopmentPage = () => {
 
       {/* ── INDUSTRIES ── */}
       <section style={{ padding: "50px 0", background: "var(--surface-2)" }}>
-        <div style={{ maxWidth: 1480, margin: "0 auto", padding: "0 5%" }}>
+        <div style={{ maxWidth: 1580, margin: "0 auto", padding: "0 5%" }}>
           <div
             className="reveal"
             style={{
@@ -2090,7 +2096,7 @@ const IoTDevelopmentPage = () => {
 
       {/* ── COMPLIANCE ── */}
       <section style={{ padding: "50px 0", background: "#fff" }}>
-        <div style={{ maxWidth: 1480, margin: "0 auto", padding: "0 5%" }}>
+        <div style={{ maxWidth: 1580, margin: "0 auto", padding: "0 5%" }}>
           <div
             className="reveal"
             style={{
@@ -2290,7 +2296,7 @@ const IoTDevelopmentPage = () => {
       </section>
 
       {/* ── CTA BANNER ── */}
-      <div style={{ padding: "0 5% 80px", maxWidth: 1480, margin: "0 auto" }}>
+      <div style={{ padding: "0 5% 80px", maxWidth: 1580, margin: "0 auto" }}>
         <div
           className="reveal"
           style={{
@@ -2392,7 +2398,7 @@ const IoTDevelopmentPage = () => {
             "linear-gradient(160deg,#f0f9ff 0%,#e0f2fe 50%,#ede9fe 100%)",
         }}
       >
-        <div style={{ maxWidth: 1480, margin: "0 auto", padding: "0 5%" }}>
+        <div style={{ maxWidth: 1580, margin: "0 auto", padding: "0 5%" }}>
           <div
             className="reveal"
             style={{
@@ -2407,6 +2413,7 @@ const IoTDevelopmentPage = () => {
                 fontSize: "clamp(1.8rem,3.5vw,2.6rem)",
                 color: "var(--ink)",
                 marginBottom: 16,
+                textAlign: "center",
               }}
             >
               Ready to Build Your IoT Solution?
@@ -2416,6 +2423,7 @@ const IoTDevelopmentPage = () => {
                 fontSize: "1.05rem",
                 color: "var(--ink-2)",
                 lineHeight: 1.75,
+                textAlign: "center",
               }}
             >
               Speak with our embedded and IoT experts today. We help brands
@@ -2502,8 +2510,7 @@ const IoTDevelopmentPage = () => {
               {
                 icon: <MapPin size={22} color="#2563eb" />,
                 title: "Office Location",
-                value:
-                  "Kunal Plaza, Pune MH 411019",
+                value: "Kunal Plaza, Pune MH 411019",
               },
               {
                 icon: <Clock size={22} color="#2563eb" />,
@@ -2545,6 +2552,7 @@ const IoTDevelopmentPage = () => {
                     alignItems: "center",
                     justifyContent: "center",
                     margin: "0 auto 16px",
+                    textAlign: "center",
                   }}
                 >
                   {c.icon}
@@ -2556,6 +2564,9 @@ const IoTDevelopmentPage = () => {
                     fontSize: "1rem",
                     color: "var(--ink)",
                     marginBottom: 8,
+                    alignItems: "center",
+                    justifyContent: "center",
+                    textAlign: "center",
                   }}
                 >
                   {c.title}
@@ -2565,6 +2576,9 @@ const IoTDevelopmentPage = () => {
                     fontSize: "0.88rem",
                     color: "var(--ink-2)",
                     lineHeight: 1.6,
+                    alignItems: "center",
+                    justifyContent: "center",
+                    textAlign: "center",
                   }}
                 >
                   {c.value}

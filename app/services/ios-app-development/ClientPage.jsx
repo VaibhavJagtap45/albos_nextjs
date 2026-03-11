@@ -1687,7 +1687,7 @@ export default function IosDevelopment() {
                 <h3 className="font-bricolage text-2xl md:text-3xl font-bold mb-4">
                   Your Idea. Your Code. Your Ownership.
                 </h3>
-                <p className="text-blue-100 max-w-2xl mx-auto leading-relaxed mb-8">
+                <p className="text-blue-100 max-w-2xl  leading-relaxed mb-8">
                   We believe trust is the foundation of successful partnerships.
                   Our contracts are designed to protect your interests, ensure
                   confidentiality, and build long-term collaboration.
@@ -1786,11 +1786,11 @@ export default function IosDevelopment() {
         </div>
 
         <div className="relative z-10   mx-auto px-[5%]">
-          <Reveal className="    mx-auto mb-16">
+          <Reveal className="  text-center  mx-auto mb-16">
             <span className="section-label text-blue-600 mb-5 block">
               Let's Build Together
             </span>
-            <h2 className="font-bricolage text-4xl md:text-6xl font-bold mb-5 leading-tight">
+            <h2 className="font-bricolage text-4xl md:text-6xl mx-auto font-bold mb-5 leading-tight">
               Ready to Grow
               <br />
               <span className="grad-text">Your Business?</span>
@@ -1845,12 +1845,14 @@ export default function IosDevelopment() {
                   href={c.href || "#"}
                   className={`contact-card block p-7 bg-white rounded-2xl shadow-sm   relative ${!c.href ? "cursor-default" : ""}`}
                 >
-                  <div className="shimmer-sweep" />
-                  <div className="text-3xl mb-3 relative z-10">{c.icon}</div>
-                  <div className="section-label text-slate-400 mb-1 relative z-10">
+                  <div className="shimmer-sweep text-center" />
+                  <div className="text-3xl mb-3 text-center relative z-10">
+                    {c.icon}
+                  </div>
+                  <div className="section-label text-center text-slate-400 mb-1 relative z-10">
                     {c.label}
                   </div>
-                  <div className="text-sm font-semibold text-slate-800 leading-snug relative z-10">
+                  <div className="text-sm text-center font-semibold text-slate-800 leading-snug relative z-10">
                     {c.val}
                   </div>
                 </a>

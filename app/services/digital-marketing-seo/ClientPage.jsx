@@ -864,7 +864,7 @@ export default function DigitalMarketing() {
                 }}
               >
                 <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
-                  Get a Free Quote <PhoneCall size={14} />
+                  Get a Free Quote
                 </button>
                 <button
                   style={{
@@ -1461,7 +1461,7 @@ export default function DigitalMarketing() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fill,minmax(260px,1fr))",
+              gridTemplateColumns: "repeat(auto-fill,minmax(320px,1fr))",
               gap: 16,
             }}
           >
@@ -1602,7 +1602,7 @@ export default function DigitalMarketing() {
           <Reveal>
             <div
               style={{
-                margin: "0 auto 68px",
+                margin: "0 auto 28px",
               }}
             >
               <div
@@ -1848,7 +1848,7 @@ export default function DigitalMarketing() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit,minmax(240px,1fr))",
+              gridTemplateColumns: "repeat(auto-fit,minmax(360px,1fr))",
               gap: 16,
             }}
           >
@@ -1947,7 +1947,7 @@ export default function DigitalMarketing() {
       </section>
 
       {/* CTA BANNER */}
-      <section style={{ padding: "0 clamp(16px,4vw,48px) 96px" }}>
+      <section style={{ padding: "0 clamp(16px,4vw,48px) 36px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <Reveal>
             <div
@@ -2092,7 +2092,7 @@ export default function DigitalMarketing() {
 
       {/* COMPARISON TABLE */}
       <section
-        style={{ padding: "0 clamp(16px,4vw,48px) 96px", background: "white" }}
+        style={{ padding: "0 clamp(16px,4vw,48px) 36px", background: "white" }}
       >
         <div style={{ maxWidth: 1380, margin: "0 auto" }}>
           <Reveal>
@@ -2298,11 +2298,11 @@ export default function DigitalMarketing() {
       {/* FAQ */}
       <section
         style={{
-          padding: "0 clamp(16px,4vw,48px) 96px",
+          padding: "50px clamp(16px,4vw,48px) 36px",
           background: "#f8fafc",
         }}
       >
-        <div style={{ maxWidth: 1380, margin: "0 auto" }}>
+        <div className="mx-auto" style={{ maxWidth: 800, margin: "0 auto" }}>
           <Reveal>
             <div style={{ marginBottom: 52 }}>
               <div
@@ -2524,7 +2524,7 @@ export default function DigitalMarketing() {
               height="200px"
               icon={<MapPin size={20} />}
               title="Office Location"
-              value="Office no. 78, 5th floor, Kunal Plaza, Pune, Maharashtra 411019"
+              value="Kunal Plaza, Pune MH 411019"
               delay={0.16}
             />
             <ContactCard

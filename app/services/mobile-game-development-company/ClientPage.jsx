@@ -932,7 +932,7 @@ export default function GameDevelopmentEnhanced() {
           background: "linear-gradient(160deg,#ffffff 60%,#eff6ff 100%)",
           borderBottom: "1px solid #e2e8f0",
           paddingTop: "60px",
-          paddingBottom: "60px",
+          paddingBottom: "40px",
           marginTop: "40px",
         }}
       >
@@ -1100,7 +1100,7 @@ export default function GameDevelopmentEnhanced() {
       </header>
 
       {/* ── FEATURES ── */}
-      <section style={{ padding: "64px 0", background: "#fff" }}>
+      <section style={{ padding: "34px 0", background: "#fff" }}>
         <div style={{ maxWidth: 1480, margin: "0 auto", padding: "0 5%" }}>
           <FadeSection>
             <h2
@@ -1165,7 +1165,7 @@ export default function GameDevelopmentEnhanced() {
       {/* ── CATEGORIES ── */}
       <section
         style={{
-          padding: "64px 0",
+          padding: "34px 0",
           background: "linear-gradient(180deg,#eff6ff 0%,#f0f9ff 100%)",
         }}
       >
@@ -1302,7 +1302,7 @@ export default function GameDevelopmentEnhanced() {
       </section>
 
       {/* ── PROCESS ── */}
-      <section style={{ padding: "64px 0", background: "#fff" }}>
+      <section style={{ padding: "34px 0", background: "#fff" }}>
         <div style={{ maxWidth: 1480, margin: "0 auto", padding: "0 5%" }}>
           <FadeSection>
             <h2
@@ -1420,7 +1420,7 @@ export default function GameDevelopmentEnhanced() {
       {/* ── PORTFOLIO TABS ── */}
       <section
         style={{
-          padding: "64px 0",
+          padding: "34px 0",
           background: "linear-gradient(180deg,#eff6ff,#fff)",
         }}
       >
@@ -1647,7 +1647,7 @@ export default function GameDevelopmentEnhanced() {
       {/* ── TESTIMONIALS ── */}
       <section
         style={{
-          padding: "64px 0",
+          padding: "34px 0",
           background: "linear-gradient(160deg,#eff6ff,#f0f9ff)",
         }}
       >
@@ -1842,20 +1842,6 @@ export default function GameDevelopmentEnhanced() {
           </FadeSection>
         </div>
       </section>
-
-      {/* ── FOOTER STRIP ── */}
-      <div
-        style={{
-          padding: "20px 5%",
-          background: "#fff",
-          borderTop: "1px solid #e2e8f0",
-          textAlign: "center",
-        }}
-      >
-        <span style={{ color: "#94a3b8", fontSize: "0.8rem" }}>
-          © 2025 Albos Technologies · Game Development Division
-        </span>
-      </div>
     </div>
   );
 }

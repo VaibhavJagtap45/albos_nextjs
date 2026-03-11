@@ -1554,7 +1554,7 @@ const CONTACT_ITEMS = [
   },
   {
     label: "Location",
-    val: "Office 78, 5th Floor, Kunal Plaza, Pune 411019",
+    val: "Kunal Plaza, Pune 411019",
     icon: "pin",
     color: "#10b981",
   },

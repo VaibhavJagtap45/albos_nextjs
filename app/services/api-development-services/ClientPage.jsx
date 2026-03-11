@@ -278,7 +278,7 @@ const techStack = {
   },
   "Cloud & DevOps": {
     desc: "Cloud-native deployments with CI/CD, monitoring, containerization & cost-optimized scaling.",
-    color: "from-amber-500 btn-amber to-amber-600",
+    color: "from-blue-500 to-blue-700",
     items: [
       {
         icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/960px-Amazon_Web_Services_Logo.svg.png",
@@ -372,7 +372,7 @@ export default function ApiDevelopment() {
         .tab-active {
           background: linear-gradient(135deg, #2563eb, #4f46e5);
           color: white;
-          box-shadow: 0 4px 20px rgba(217,119,6,.35);
+          box-shadow: 0 4px 20px rgba(6, 203, 217, 0.35);
         }
         .code-line { font-family: 'Fira Code', monospace; font-size: 12px; }
         .progress-bar {
@@ -1406,7 +1406,7 @@ export default function ApiDevelopment() {
               direction="right"
               delay={200}
             >
-              <div className="rounded-3xl border-2 border-slate-100 bg-white p-10 md:p-12 shadow-sm hover:shadow-xl transition-shadow">
+              <div className="rounded-3xl border-2 border-slate-100 bg-white p-8 md:p-10 shadow-sm hover:shadow-xl transition-shadow">
                 <h3 className="font-display text-2xl md:text-3xl font-bold mb-8 text-slate-900">
                   Built for Enterprise Trust &amp; Long-Term Partnerships
                 </h3>
@@ -1508,16 +1508,16 @@ export default function ApiDevelopment() {
         </div>
 
         <div className="  mx-auto px-[5%] relative z-10">
-          <AnimatedSection className="    mx-auto mb-16">
+          <AnimatedSection className="text-center  mx-auto mb-16">
             <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-blue-300 text-sm font-semibold mb-6 tracking-wide">
               GET STARTED
             </span>
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
+            <h2 className="font-display text-center text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
               Ready to Grow
               <br />
-              <span className="gradient-text">Your Business?</span>
+              <span className="gradient-text text-center">Your Business?</span>
             </h2>
-            <p className="text-slate-300 text-lg leading-relaxed">
+            <p className="text-slate-300 text-center text-lg leading-relaxed">
               Speak with our experts today. We help brands scale with powerful
               development, design, automation, and cloud solutions.
             </p>
@@ -1546,7 +1546,7 @@ export default function ApiDevelopment() {
               {
                 icon: "📍",
                 label: "Office Location",
-                value: "Office no. 78, 5th floor, Kunal Plaza, Pune, MH 411019",
+                value: "Kunal Plaza, Pune MH 411019",
               },
               {
                 icon: "🕐",
@@ -1556,11 +1556,11 @@ export default function ApiDevelopment() {
             ].map((card, i) => (
               <AnimatedSection key={i} delay={i * 80}>
                 <div className="cta-card rounded-2xl h-[200px] bg-white/5 border border-white/10 p-7 backdrop-blur-sm hover:bg-white/10  ">
-                  <div className="text-3xl mb-4">{card.icon}</div>
-                  <h3 className="font-semibold text-white mb-2">
+                  <div className="text-3xl mb-4 text-center">{card.icon}</div>
+                  <h3 className="font-semibold text-white text-center mb-2">
                     {card.label}
                   </h3>
-                  <p className="text-slate-300 text-sm leading-relaxed">
+                  <p className="text-slate-300 text-center text-sm leading-relaxed">
                     {card.value}
                   </p>
                 </div>

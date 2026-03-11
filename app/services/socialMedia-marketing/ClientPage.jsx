@@ -925,7 +925,7 @@ animation: pan-grad 5s ease infinite;
       <section
         style={{ padding: "36px clamp(16px,4vw,40px)", background: "white" }}
       >
-        <div style={{ maxWidth: 1480, margin: "0 auto" }}>
+        <div style={{ maxWidth: 1380, margin: "0 auto" }}>
           <Reveal>
             <div
               style={{
@@ -1205,7 +1205,7 @@ animation: pan-grad 5s ease infinite;
           background: "linear-gradient(180deg,#f8faff,white)",
         }}
       >
-        <div style={{ maxWidth: 1480, margin: "0 auto" }}>
+        <div style={{ maxWidth: 1380, margin: "0 auto" }}>
           <Reveal>
             <div
               style={{
@@ -1410,7 +1410,7 @@ animation: pan-grad 5s ease infinite;
       <section
         style={{ padding: "36px clamp(16px,4vw,40px)", background: "white" }}
       >
-        <div style={{ maxWidth: 1480, margin: "0 auto" }}>
+        <div style={{ maxWidth: 1380, margin: "0 auto" }}>
           <Reveal>
             <div
               style={{
@@ -1585,7 +1585,7 @@ animation: pan-grad 5s ease infinite;
           background: "linear-gradient(180deg,#f8faff,white)",
         }}
       >
-        <div style={{ maxWidth: 1480, margin: "0 auto" }}>
+        <div style={{ maxWidth: 1380, margin: "0 auto" }}>
           <Reveal>
             <div
               style={{
@@ -1794,7 +1794,7 @@ animation: pan-grad 5s ease infinite;
       <section
         style={{ padding: "36px clamp(16px,4vw,40px)", background: "white" }}
       >
-        <div style={{ maxWidth: 1480, margin: "0 auto" }}>
+        <div style={{ maxWidth: 1380, margin: "0 auto" }}>
           <Reveal>
             <div
               style={{
@@ -2070,7 +2070,15 @@ animation: pan-grad 5s ease infinite;
 
       {/* ══ FAQ ══ */}
       <section
-        style={{ padding: "0 clamp(16px,4vw,40px) 96px", background: "white" }}
+        className="mx-auto"
+        style={{
+          padding: "0 clamp(16px,4vw,40px) 96px",
+          background: "white",
+          alignContent: "center",
+
+          width: 700,
+          alignItems: "center",
+        }}
       >
         <div style={{ margin: "0 auto" }}>
           <Reveal>
@@ -2096,11 +2104,19 @@ animation: pan-grad 5s ease infinite;
                   fontWeight: 800,
                   color: "#0f172a",
                   marginBottom: 14,
+                  textAlign: "center",
                 }}
               >
                 Frequently Asked Questions
               </h2>
-              <p style={{ fontSize: 16, color: "#475569", lineHeight: 1.75 }}>
+              <p
+                style={{
+                  fontSize: 16,
+                  color: "#475569",
+                  lineHeight: 1.75,
+                  textAlign: "center",
+                }}
+              >
                 Everything you need to know before choosing a social media
                 marketing partner.
               </p>
@@ -2289,7 +2305,7 @@ animation: pan-grad 5s ease infinite;
               {
                 icon: <MapPin size={20} color="#6366f1" />,
                 title: "Office Location",
-                val: "Office no. 78, 5th floor, Kunal Plaza, Pune, MH 411019",
+                val: "Kunal Plaza, Pune MH 411019",
               },
               {
                 icon: <Clock size={20} color="#6366f1" />,

@@ -433,7 +433,7 @@ function ProcessSection() {
     },
   ];
   return (
-    <section className="py-24 bg-white">
+    <section className="py-8 bg-white">
       <div className="max-w-screen-2xl mx-auto px-[5%]">
         <motion.div
           ref={ref}
@@ -638,7 +638,7 @@ function Testimonials() {
     },
   ];
   return (
-    <section className="py-24 bg-gradient-to-b from-blue-50 to-white">
+    <section className="py-8 bg-gradient-to-b from-blue-50 to-white">
       <div className="max-w-screen-2xl mx-auto px-[5%]">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -909,7 +909,7 @@ const Hero = () => (
 
 /* ─────────────────── UNCHANGED SECTIONS ─────────────────── */
 const WhyChoose = () => (
-  <section className="py-24 bg-white">
+  <section className="py-8 bg-white">
     <div className="px-[5%]">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
@@ -969,7 +969,7 @@ const WhyChoose = () => (
 );
 
 const ServicesGrid = () => (
-  <section className="py-24 bg-gradient-to-b from-slate-50 to-blue-50">
+  <section className="py-8 bg-gradient-to-b from-slate-50 to-blue-50">
     <div className="px-[5%]">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
@@ -1037,7 +1037,7 @@ const ServicesGrid = () => (
 );
 
 const Categories = () => (
-  <section className="py-24 bg-white">
+  <section className="py-8 bg-white">
     <div className="max-w-screen-2xl mx-auto px-[5%]">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
@@ -1131,7 +1131,7 @@ const Categories = () => (
 );
 
 const UseCases = () => (
-  <section className="py-24 bg-gradient-to-b from-blue-50 to-blue-100">
+  <section className="py-8 bg-gradient-to-b from-blue-50 to-blue-100">
     <div className="max-w-screen-2xl mx-auto px-[5%] text-center">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
@@ -1180,7 +1180,7 @@ const UseCases = () => (
 );
 
 const TechStack = () => (
-  <section className="py-24 bg-white">
+  <section className="py-8 bg-white">
     <div className="max-w-screen-2xl mx-auto px-[5%] text-center">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
@@ -1256,7 +1256,7 @@ const TechStack = () => (
 );
 
 const CTA = () => (
-  <section className="relative w-full py-16 sm:py-20 md:py-24 bg-gradient-to-br from-blue-50 via-blue-100 to-blue-50 overflow-hidden">
+  <section className="relative w-full py-16 sm:py-20 md:py-8 bg-gradient-to-br from-blue-50 via-blue-100 to-blue-50 overflow-hidden">
     <div className="absolute inset-0 -z-10">
       <div className="absolute top-0 left-0 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl animate-pulse" />
       <div
@@ -1338,8 +1338,7 @@ const CTA = () => (
               </>
             ),
             title: "Office Location",
-            value:
-              "Office no. 78, 5th floor, Kunal Plaza, Pune, Maharashtra 411019",
+            value: "Kunal Plaza, Pune, Maharashtra 411019",
           },
           {
             icon: (

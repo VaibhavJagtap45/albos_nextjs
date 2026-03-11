@@ -87,24 +87,30 @@ function Reveal({ children, className = "", delay = 0, y = 40, x = 0 }) {
   );
 }
 
-function CountUp({ to, suffix = "", decimals = 0 }) {
+function CountUp({ to, suffix = "", decimals = 0, className = "" }) {
   const [n, setN] = useState(0);
   const [ref, v] = useInView();
+
   useEffect(() => {
     if (!v) return;
     let s = 0;
     const step = to / (1600 / 16);
+
     const t = setInterval(() => {
       s += step;
       if (s >= to) {
         setN(to);
         clearInterval(t);
-      } else setN(parseFloat(s.toFixed(decimals)));
+      } else {
+        setN(parseFloat(s.toFixed(decimals)));
+      }
     }, 16);
+
     return () => clearInterval(t);
   }, [v, to, decimals]);
+
   return (
-    <span ref={ref}>
+    <span ref={ref} className={className}>
       {n}
       {suffix}
     </span>
@@ -494,7 +500,11 @@ animation:ripple 2s ease-out infinite;
                       animationDelay: `${600 + i * 100}ms`,
                     }}
                   >
-                    <CountUp to={s.val} suffix={s.suffix} />
+                    <CountUp
+                      className="font-[800]"
+                      to={s.val}
+                      suffix={s.suffix}
+                    />
                   </div>
                   <div className="text-xs text-slate-500 mt-1.5 font-medium leading-tight">
                     {s.label}
@@ -838,7 +848,7 @@ animation:ripple 2s ease-out infinite;
         />
 
         <div className="relative z-10   px-[5%]">
-          <Reveal className="  mx-auto mb-20">
+          <Reveal className="  mx-auto mb-10">
             <span className="label-pill text-blue-600 mb-4 block">
               What We Build
             </span>
@@ -904,7 +914,7 @@ animation:ripple 2s ease-out infinite;
         />
 
         <div className="  px-[5%]">
-          <Reveal className=" max-w-3xl  mb-20">
+          <Reveal className=" max-w-3xl  mb-10">
             <span className="label-pill text-blue-600 mb-4 block">
               How We Work
             </span>

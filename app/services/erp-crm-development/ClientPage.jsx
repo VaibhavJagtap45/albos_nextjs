@@ -1803,7 +1803,7 @@ export default function ErpCrmEnhanced() {
       </div>
 
       {/* ── WHAT WE DELIVER ── */}
-      <section style={{ padding: "72px 0", background: "#fff" }}>
+      <section style={{ padding: "32px 0", background: "#fff" }}>
         <div style={{ maxWidth: 1480, margin: "0 auto", padding: "0 5%" }}>
           <FadeSection>
             <SectionLabel>What we build</SectionLabel>
@@ -2077,7 +2077,7 @@ export default function ErpCrmEnhanced() {
       {/* ── FEATURES ── */}
       <section
         style={{
-          padding: "72px 0",
+          padding: "32px 0",
           background: "linear-gradient(180deg,#f8fafc,#eff6ff)",
         }}
       >
@@ -2146,7 +2146,7 @@ export default function ErpCrmEnhanced() {
       </section>
 
       {/* ── PROCESS ── */}
-      <section style={{ padding: "72px 0", background: "#fff" }}>
+      <section style={{ padding: "32px 0", background: "#fff" }}>
         <div style={{ maxWidth: 1480, margin: "0 auto", padding: "0 5%" }}>
           <FadeSection>
             <SectionLabel>How we work</SectionLabel>
@@ -2242,7 +2242,7 @@ export default function ErpCrmEnhanced() {
       {/* ── INDUSTRIES TABS ── */}
       <section
         style={{
-          padding: "72px 0",
+          padding: "32px 0",
           background: "linear-gradient(180deg,#eff6ff,#f8fafc)",
         }}
       >
@@ -2464,7 +2464,7 @@ export default function ErpCrmEnhanced() {
       {/* ── TESTIMONIALS ── */}
       <section
         style={{
-          padding: "72px 0",
+          padding: "32px 0",
           background: "linear-gradient(180deg,#eff6ff,#f0f9ff)",
         }}
       >

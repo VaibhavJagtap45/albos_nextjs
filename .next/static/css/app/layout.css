@@ -2382,6 +2382,10 @@ video {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -2499,6 +2503,9 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.font-\[800\] {
+  font-weight: 800;
 }
 .font-black {
   font-weight: 900;
@@ -3425,6 +3432,10 @@ button,
     gap: 3.5rem;
   }
 
+  .md\:p-10 {
+    padding: 2.5rem;
+  }
+
   .md\:p-12 {
     padding: 3rem;
   }
@@ -3452,9 +3463,9 @@ button,
     padding-bottom: 0.5rem;
   }
 
-  .md\:py-24 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+  .md\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .md\:text-left {
