@@ -16,60 +16,40 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/contact/page.js"
-    ],
     "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/_not-found/page.js"
-    ],
-    "/services/iot-application-development-services/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/services/iot-application-development-services/page.js"
-    ],
-    "/services/api-development-services/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/services/api-development-services/page.js"
-    ],
-    "/services/telecalling-support/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/services/telecalling-support/page.js"
-    ],
-    "/services/socialMedia-marketing/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/services/socialMedia-marketing/page.js"
     ],
     "/services/digital-marketing-seo/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/services/digital-marketing-seo/page.js"
     ],
-    "/services/mobile-game-development-company/page": [
+    "/services/ios-app-development/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/services/mobile-game-development-company/page.js"
+      "static/chunks/app/services/ios-app-development/page.js"
     ],
-    "/page": [
+    "/services/website-development-services-company/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/services/website-development-services-company/page.js"
     ],
     "/services/android-app-development-services/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/services/android-app-development-services/page.js"
     ],
-    "/services/ios-app-development/page": [
+    "/services/iot-application-development-services/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/services/ios-app-development/page.js"
+      "static/chunks/app/services/iot-application-development-services/page.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
     ]
   }
 }
